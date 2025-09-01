@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6" fill="white" stroke="red" stroke-width="2"/><line x1="12" y1="2" x2="12" y2="6" stroke="red" stroke-width="2"/><line x1="2" y1="12" x2="6" y2="12" stroke="red" stroke-width="2"/><line x1="18" y1="12" x2="22" y2="12" stroke="red" stroke-width="2"/><line x1="12" y1="18" x2="12" y2="22" stroke="red" stroke-width="2"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title desc">
+  <title id="title">Alarm – farebná ikona</title>
+  <desc id="desc">Červená siréna s lúčmi a výkričníkom.</desc>
+  
+  <g stroke="#111" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- lúče -->
+    <path d="M128 20 L128 44" stroke="#f87171"></path>
+    <path d="M56 44 L80 60" stroke="#f87171"></path>
+    <path d="M200 44 L176 60" stroke="#f87171"></path>
+    <path d="M28 100 L60 116" stroke="#f87171"></path>
+    <path d="M228 100 L196 116" stroke="#f87171"></path>
+    
+    <!-- telo sirény -->
+    <path d="M84 120 A44 44 0 0 1 172 120 V160 H84 Z" fill="url(#gradRed)" stroke="#b91c1c"></path>
+    
+    <!-- podstavec -->
+    <rect x="76" y="160" width="104" height="28" rx="10" fill="#374151" stroke="#111"></rect>
+    
+    <!-- výkričník -->
+    <path d="M128 96 L128 132" stroke="#fff"></path>
+    <circle cx="128" cy="146" r="6" fill="#fff" stroke="none"></circle>
+  </g>
+  
+  <!-- gradient -->
+  <defs>
+    <linearGradient id="gradRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444"></stop>
+      <stop offset="100%" stop-color="#b91c1c"></stop>
+    </linearGradient>
+  </defs>
+</svg>

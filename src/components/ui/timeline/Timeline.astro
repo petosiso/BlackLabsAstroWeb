@@ -1,8 +1,7 @@
 ---
 interface Item {
   title: string;
-  company: string;
-  region: string;
+   prompt: string;
   description: string;
   technologies?: string[];
 }
@@ -68,13 +67,10 @@ const { items, centered = true } = props;
                     <span class="inline-flex" aria-hidden="true" set:html={jobIcon} />
                     {item.title}
                   </h3>
-                  <p class="text-sm font-medium text-[color:var(--color-text-muted)] m-0 flex items-center gap-2">
-                    <span class="inline-flex" aria-hidden="true" set:html={companyIcon} />
-                    {item.company}
-                  </p>
+               
                   <p class="text-sm text-[color:var(--color-text-muted)] m-0 flex items-center gap-2">
                     <span class="inline-flex" aria-hidden="true" set:html={locationIcon} />
-                    {item.region}
+                    {item.prompt}
                   </p>
                 </div>
                 <p class="text-[color:var(--color-text-secondary)] m-0">{item.description}</p>
@@ -108,13 +104,10 @@ const { items, centered = true } = props;
                 <span class="inline-flex" aria-hidden="true" set:html={jobIcon} />
                 {item.title}
               </h3>
-              <p class="text-sm font-medium text-[color:var(--color-text-muted)] m-0 flex items-center gap-2">
-                <span class="inline-flex" aria-hidden="true" set:html={companyIcon} />
-                {item.company}
-              </p>
+    
               <p class="text-sm text-[color:var(--color-text-muted)] m-0 flex items-center gap-2">
                 <span class="inline-flex" aria-hidden="true" set:html={locationIcon} />
-                {item.region}
+                {item.prompt}
               </p>
             </div>
             <p class="text-[color:var(--color-text-secondary)] m-0">{item.description}</p>

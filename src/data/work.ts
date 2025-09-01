@@ -11,72 +11,117 @@ export const workIcons = {
 
 export const work = [
   {
-    title: "Senior Software Engineer",
-    company: "Acme Cloud",
-    region: "United States",
+    title: "Komfort bývania",
+    prompt: "Automatizácie a inteligentné ovládanie",
     description:
-      "Led the design and delivery of a multi‑tenant platform, decomposed critical monolith paths into services, improved p95 latency by 40%, defined SLOs and on‑call rotations, and mentored junior engineers.",
+      "Zabúdate večer zamknúť dvere? Alebo sa vám už stalo, že ste nechali otvorenú garážovú bránu? Po sprche chcete inteligentne vyvetrať kúpeľňu, kým je tam vysoká vlhkosť? Alebo sa vám stane, že vypadne internet a potrebujete automaticky reštartovať router? Vďaka smart automatizáciám a ovládaniu na diaľku máte všetko pod kontrolou. Dokonca vám môže počas sprchy pustiť obľúbenú hudbu priamo v kúpeľni.",
     technologies: [
-      "TypeScript",
-      "Node.js",
-      "React",
-      "PostgreSQL",
-      "Redis",
-      "AWS",
-      "Docker",
-      "Kubernetes",
-      "Terraform",
-      "GraphQL",
+      "Smart zámky",
+      "Smart spínače a senzory",
+      "Automatizácie",
+      "Integrácia multimédií"
     ],
   },
   {
-    title: "Staff Software Engineer",
-    company: "FinchPay",
-    region: "Global",
+    title: "Náhrada nástenných ovládačov",
+    prompt: "Všetko v jednom modernom tablete",
     description:
-      "Architected event‑driven payment services with idempotency and retries, introduced Kafka for async processing, enforced API versioning, and drove observability with structured logging and tracing.",
+      "Namiesto viacerých samostatných ovládačov – termostatu, ovládania rekuperácie či drahého videovrátnika – môžete mať všetko elegantne integrované v jednom dizajnovom tablete na stene. V prehľadnom rozhraní získate nielen ovládanie, ale aj aktuálne informácie o stave celého domu.",
     technologies: [
-      "TypeScript",
-      "NestJS",
-      "Kafka",
-      "PostgreSQL",
-      "Redis",
-      "gRPC",
-      "OpenTelemetry",
-      "AWS",
+      "Nástenný tablet",
+      "Integrácia systémov",
+      "Prehľadné rozhranie"
     ],
   },
   {
-    title: "Senior Frontend Engineer",
-    company: "Insight Analytics",
-    region: "Europe",
+    title: "Úspora financií",
+    prompt: "Optimalizácia spotreby a nižšie náklady",
     description:
-      "Owned the design system and SSR/ISR strategy, improved Core Web Vitals (LCP/INP) into the green, and shipped accessible UI components with strong tests and story coverage.",
+      "Nemusíte dokupovať drahé samostatné zariadenia – termostat k tepelnému čerpadlu, ovládanie rekuperácie či videovrátnik. Vždy máte detailný prehľad o spotrebe elektriny, plynu a vody. Na základe dát môžete jednoducho zmeniť svoje návyky a šetriť peniaze.",
     technologies: [
-      "React",
-      "Next.js",
-      "Astro",
-      "Tailwind CSS",
-      "Playwright",
-      "Vitest",
+      "Monitoring spotreby energií",
+      "Smart ovládanie čerpadla",
+      "Optimalizácia rekuperácie"
     ],
   },
   {
-    title: "Software Engineer",
-    company: "LaunchPad",
-    region: "Brazil",
+    title: "Bezpečnosť",
+    prompt: "Ochrana domu a rodiny",
     description:
-      "Built MVPs end‑to‑end: designed REST/GraphQL APIs, set up CI/CD with preview environments, introduced feature flags, and migrated data to Postgres.",
+      "Alarm aktivovaný pohybovými senzormi, prístup cez kódovú klávesnicu namiesto nosenia kľúčov, prehľad o tom, či je dom zamknutý a všetky okná zatvorené. Okamžité upozornenia z detektorov dymu či detektorov úniku vody vám pomôžu predísť škodám.",
     technologies: [
-      "Node.js",
-      "Express",
-      "GraphQL",
-      "Supabase",
-      "PostgreSQL",
-      "GitHub Actions",
-      "Docker",
+      "Alarm",
+      "Detektory pohybu",
+      "Detektory dymu a vody",
+      "Kódové klávesnice"
     ],
   },
+  // {
+  //   title: "Lokálne ovládanie",
+  //   prompt: "Funguje aj bez internetu",
+  //   description:
+  //     "Home Assistant beží kompletne lokálne – bez cloudu, bez posielania dát na internet. Vaša domácnosť funguje nezávisle od internetu a vaše súkromie je maximálne chránené.",
+  //   technologies: [
+  //     "Lokálny server",
+  //     "Ochrana súkromia",
+  //     "Offline režim"
+  //   ],
+  // },
+  {
+    title: "Ovládanie na diaľku",
+    prompt: "Všetko máte pod kontrolou, nech ste kdekoľvek",
+    description:
+      "Bezpečné pripojenie k domu aj na diaľku. Kedykoľvek môžete cez mobilný telefón alebo počítač skontrolovať stav a ovládať všetky zariadenia vo vašej domácnosti.",
+    technologies: [
+      "Mobilná aplikácia",
+      "Bezpečné pripojenie",
+      "Diaľkové ovládanie"
+    ],
+  },
+  {
+    title: "Veľmi výhodná cena",
+    prompt: "Bez zbytočných marží, viac možností",
+    description:
+      "Oproti uzavretým systémom ako TapHome alebo Loxone ponúkame bezkonkurenčnú cenu a ešte širšie možnosti. Neplatíte marže predraženým spoločnostiam. Systém je aktívne vyvíjaný komunitou nadšencov, má masívnu podporu a milióny používateľov. Podporuje zariadenia od rôznych výrobcov – nie ste viazaní na jedinú značku.",
+    technologies: [
+      "Open-source platforma",
+      "Podpora viacerých výrobcov",
+      "Komunitný vývoj"
+    ],
+  },
+  // {
+  //   title: "Flexibilita a rozšíriteľnosť",
+  //   prompt: "Systém rastie spolu s vašimi potrebami",
+  //   description:
+  //     "Môžete začať len s pár senzormi a postupne pridávať ďalšie zariadenia – od svetiel, cez klimatizáciu, až po fotovoltaiku či nabíjačku elektromobilu. Všetko bez nutnosti meniť základný systém.",
+  //   technologies: [
+  //     "Modulárny systém",
+  //     "Integrácia tisícov zariadení",
+  //     "Budúca pripravenosť"
+  //   ],
+  // },
+  {
+    title: "Bez nutnosti špeciálnej elektroinštalácie",
+    prompt: "SmartHome funguje aj v hotovom dome",
+    description:
+      "Nemusíte nijak špeciálne upravovať elektroinštaláciu. Smart domácnosť vieme vytvoriť aj vo vašom už postavenom dome výberom vhodných zariadení. Ak ste v priebehu výstavby, všetko je ešte jednoduchšie a máte viac možností, no smart funkcie vieme dodať aj do existujúcej nehnuteľnosti bez zásadných úprav.",
+    technologies: [
+      "Štandardná elektroinštalácia",
+      "Bezdrôtové zariadenia",
+      "Rozšíriteľnosť pri výstavbe"
+    ],
+  },
+  // {
+  //   title: "Ekologické riešenie",
+  //   prompt: "Šetrite energiu aj planétu",
+  //   description:
+  //     "Smart dom pomáha šetriť elektrinu, vodu aj plyn. Vďaka automatizáciám sa energie využívajú len vtedy, keď ich skutočne potrebujete.",
+  //   technologies: [
+  //     "Automatizované úspory",
+  //     "Optimalizácia spotreby",
+  //     "Zelené riešenia"
+  //   ],
+  // }
 ];
 
 export type WorkItem = (typeof work)[number];

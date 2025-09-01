@@ -1,11 +1,11 @@
 ---
 import Timeline from "../ui/timeline/Timeline.astro";
 import { workIcons } from "../../data/work";
+import Button from "../ui/button/Button.astro";
 
 interface ExperienceItem {
   title: string;
-  company: string;
-  region: string;
+  prompt: string;
   description: string;
   technologies?: string[];
 }
@@ -20,12 +20,20 @@ const { items, title } = Astro.props as Props;
 
 <section class="w-full py-8">
   <div class="mx-auto max-w-6xl px-5 md:px-6">
-    {title && (
-      <h2 class="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">{title}</h2>
-    )}
+    {
+      title && (
+        <h2 class="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">
+          {title}
+        </h2>
+      )
+    }
 
-    <Timeline items={items} icons={workIcons} centered={false}/>
+    <Timeline items={items} icons={workIcons} centered={false} />
+
+    <div class="mt-8 mb-8 flex items-center justify-center gap-3">
+      <Button href={"/homeassistant"} variant="primary" size="lg"
+        >{"Preskúmať viac výhod"}</Button
+      >
+    </div>
   </div>
 </section>
-
-
