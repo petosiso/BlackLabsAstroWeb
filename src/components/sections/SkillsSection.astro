@@ -2,6 +2,7 @@
 import Carousel from "../ui/carousel/Carousel.astro";
 import { logos } from "../../data/logos";
 import Button from "../ui/button/Button.astro";
+import PhotoCarousel from "../ui/PhotoCarousel/PhotoCarousel.astro";
 interface SkillItem {
   icon: string; // inline SVG
   title: string;
@@ -26,11 +27,12 @@ const { title, skills } = Astro.props as Props;
       )
     }
 
-    <div class="mb-6">
+    <!-- <div class="mb-6">
       <Carousel tools={logos} />
-    </div>
+    </div> -->
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mt-2">
       {
         skills.map((skill) => (
           <div class="card-surface p-6 group transition-transform duration-200 hover:-translate-y-1 hover:elevate-lg">
