@@ -21,6 +21,7 @@ export const work = [
       "Automatizácie",
       "Integrácia multimédií"
     ],
+    notes: ["po príchode domov sa rozsvietia svetlá v predsieni", "po sprche sa zapne ventilátor v kúpeľni", "upozornenie na mobil ak ste zabudli zatvoriť terasu alebo okno"],
   },
   {
     title: "Náhrada nástenných ovládačov",
@@ -32,6 +33,7 @@ export const work = [
       "Integrácia systémov",
       "Prehľadné rozhranie"
     ],
+    notes: [],
   },
   {
     title: "Úspora financií",
@@ -43,6 +45,7 @@ export const work = [
       "Smart ovládanie čerpadla",
       "Optimalizácia rekuperácie"
     ],
+    notes: [],
   },
   {
     title: "Bezpečnosť",
@@ -55,18 +58,8 @@ export const work = [
       "Detektory dymu a vody",
       "Kódové klávesnice"
     ],
+    notes: [],
   },
-  // {
-  //   title: "Lokálne ovládanie",
-  //   prompt: "Funguje aj bez internetu",
-  //   description:
-  //     "Home Assistant beží kompletne lokálne – bez cloudu, bez posielania dát na internet. Vaša domácnosť funguje nezávisle od internetu a vaše súkromie je maximálne chránené.",
-  //   technologies: [
-  //     "Lokálny server",
-  //     "Ochrana súkromia",
-  //     "Offline režim"
-  //   ],
-  // },
   {
     title: "Ovládanie na diaľku",
     prompt: "Všetko máte pod kontrolou, nech ste kdekoľvek",
@@ -77,6 +70,7 @@ export const work = [
       "Bezpečné pripojenie",
       "Diaľkové ovládanie"
     ],
+    notes: [],
   },
   {
     title: "Veľmi výhodná cena",
@@ -88,18 +82,9 @@ export const work = [
       "Podpora viacerých výrobcov",
       "Komunitný vývoj"
     ],
+    notes: [],
   },
-  // {
-  //   title: "Flexibilita a rozšíriteľnosť",
-  //   prompt: "Systém rastie spolu s vašimi potrebami",
-  //   description:
-  //     "Môžete začať len s pár senzormi a postupne pridávať ďalšie zariadenia – od svetiel, cez klimatizáciu, až po fotovoltaiku či nabíjačku elektromobilu. Všetko bez nutnosti meniť základný systém.",
-  //   technologies: [
-  //     "Modulárny systém",
-  //     "Integrácia tisícov zariadení",
-  //     "Budúca pripravenosť"
-  //   ],
-  // },
+
   {
     title: "Bez nutnosti špeciálnej elektroinštalácie",
     prompt: "SmartHome funguje aj v hotovom dome",
@@ -110,18 +95,44 @@ export const work = [
       "Bezdrôtové zariadenia",
       "Rozšíriteľnosť pri výstavbe"
     ],
+    notes: [],
   },
-  // {
-  //   title: "Ekologické riešenie",
-  //   prompt: "Šetrite energiu aj planétu",
-  //   description:
-  //     "Smart dom pomáha šetriť elektrinu, vodu aj plyn. Vďaka automatizáciám sa energie využívajú len vtedy, keď ich skutočne potrebujete.",
-  //   technologies: [
-  //     "Automatizované úspory",
-  //     "Optimalizácia spotreby",
-  //     "Zelené riešenia"
-  //   ],
-  // }
+  {
+    title: "Ekologické riešenie",
+    prompt: "Šetrite energiu aj planétu",
+    description:
+      "Smart dom pomáha šetriť elektrinu, vodu aj plyn. Vďaka automatizáciám sa energie využívajú len vtedy, keď ich skutočne potrebujete.",
+    technologies: [
+      "Automatizované úspory",
+      "Optimalizácia spotreby",
+      "Zelené riešenia"
+    ],
+    notes: [],
+  },
+  {
+    title: "Lokálne ovládanie",
+    prompt: "Funguje aj bez internetu",
+    description:
+      "Home Assistant beží kompletne lokálne – bez cloudu, bez posielania dát na internet. Vaša domácnosť funguje nezávisle od internetu a vaše súkromie je maximálne chránené.",
+    technologies: [
+      "Lokálny server",
+      "Ochrana súkromia",
+      "Offline režim"
+    ],
+    notes: [],
+  },
+  {
+    title: "Flexibilita a rozšíriteľnosť",
+    prompt: "Systém rastie spolu s vašimi potrebami",
+    description:
+      "Môžete začať len s pár senzormi a postupne pridávať ďalšie zariadenia – od svetiel, cez klimatizáciu, až po fotovoltaiku či nabíjačku elektromobilu. Všetko bez nutnosti meniť základný systém.",
+    technologies: [
+      "Modulárny systém",
+      "Integrácia tisícov zariadení",
+      "Budúca pripravenosť"
+    ],
+    notes: [],
+  },
 ];
 
 export type WorkItem = (typeof work)[number];

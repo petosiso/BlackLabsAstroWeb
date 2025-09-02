@@ -8,6 +8,7 @@ interface ExperienceItem {
   prompt: string;
   description: string;
   technologies?: string[];
+  notes: string[];
 }
 
 interface Props {
@@ -28,7 +29,12 @@ const { items, title } = Astro.props as Props;
       )
     }
 
-    <Timeline items={items} icons={workIcons} centered={false} />
+    <Timeline
+      items={items.slice(0, 7)}
+      icons={workIcons}
+      centered={false}
+      includeNotes={false}
+    />
 
     <div class="mt-8 mb-8 flex items-center justify-center gap-3">
       <Button href={"/homeassistant"} variant="primary" size="lg"
