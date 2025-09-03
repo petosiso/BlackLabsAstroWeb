@@ -1,26 +1,25 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
 import GlowLineSeparator from '@/components/ui/separator/GlowLineSeparator.astro';
+import { author } from '../data/author';
+
 const pageTitle = 'About Me';
 const pageDescription = 'Learn more about my background and approach to software engineering.';
 ---
 
-<Layout title={pageTitle} description={pageDescription} pubDate={new Date()} showHeader={false}>
-  <p>
-    Hey! I'm a senior software engineer who loves designing reliable systems and shipping products that feel great to use.
-  </p>
-  <p>
-    I work across the stack with TypeScript, Node.js, React/Next.js, and PostgreSQL. I care deeply about readable code,
-    strong tests, and observability. My approach: ship small, iterate quickly, measure outcomes.
-  </p>
-  <p>
-    Recent highlights include leading a migration from a monolith to well‑scoped services, improving p95 latency,
-    and introducing CI/CD with preview environments and quality gates.
-  </p>
-  <p>
-    Outside of feature work, I enjoy mentoring, documentation, and building design‑system components that make teams faster.
-    Always learning—and always happy to collaborate on meaningful problems.
-  </p>
+<Layout title={pageTitle} description={pageDescription} pubDate={new Date()} showHeader={false} author={author.name} readingTimeMin={3}>
+<p>
+  Ahojte, volám sa Peter a pracujem ako senior software developer. K smart home riešeniam som sa dostal pred dvoma rokmi, keď som začal stavať vlastný dom.
+</p>
+<p>
+  Chcel som od domu niečo viac. Máme rok 2025 a technológie v domácnosti by tomu mali zodpovedať. Už na začiatku sa mi nepáčila predstava mať na stenách niekoľko samostatných ovládačov – termostat od tepelného čerpadla, ovládanie rekuperácie, displej pre videovrátnika a podobne. Verím, že tieto systémy majú navzájom spolupracovať a nie fungovať oddelene. Dom by mal mať jeden spoločný „mozog“.
+</p>
+<p>
+  Začal som si preto podrobne študovať možnosti. Získal som cenové ponuky od firiem ako Loxone či TapHome, no ich ceny ma úprimne pobavili. Napríklad ponuka od Loxone bola v takej výške, akoby som platil za hrubú stavbu menšieho domu – a to ani nie so všetkými funkciami, ktoré dnes používam.
+</p>
+<p>
+  Ako jasný víťaz sa ukázal systém <strong>Home Assistant</strong>. Študujem ho a aktívne používam už viac ako dva roky, a preto som sa rozhodol podeliť o svoje skúsenosti aj s ďalšími ľuďmi, ktorí chcú od svojho domu niečo viac. :) Na vlastnej koži som zistil, že začiatky bývajú ťažké a vtedy by som bol ocenil keby ma niekto takto nasmeroval.
+</p>
 
   <GlowLineSeparator />
 

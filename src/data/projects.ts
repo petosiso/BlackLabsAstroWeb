@@ -41,6 +41,7 @@ export const projects = [
 			"prehľad spotreby za konkrétne spotrebiče a za celý dom",
 			"grafické zobrazenie trendov",
 			"mesačné porovnania s predošlým obdobím",
+			"detekcia úniku vody - ak vidíte spotrebu vody keď nie ste doma, niečo nie je v poriadku",
 		],
 		icon: AlarmIcon,
 	},

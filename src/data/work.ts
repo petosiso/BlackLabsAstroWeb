@@ -14,22 +14,32 @@ export const work = [
     title: "Komfort bývania",
     prompt: "Automatizácie a inteligentné ovládanie",
     description:
-      "Zabúdate večer zamknúť dvere? Alebo sa vám už stalo, že ste nechali otvorenú garážovú bránu? Po sprche chcete inteligentne vyvetrať kúpeľňu, kým je tam vysoká vlhkosť? Alebo sa vám stane, že vypadne internet a potrebujete automaticky reštartovať router? Vďaka smart automatizáciám a ovládaniu na diaľku máte všetko pod kontrolou. Dokonca vám môže počas sprchy pustiť obľúbenú hudbu priamo v kúpeľni.",
+      "Vďaka smart automatizáciám a ovládaniu na diaľku máte všetko pod kontrolou.",
     technologies: [
       "Smart zámky",
       "Smart spínače a senzory",
       "Automatizácie",
       "Integrácia multimédií"
     ],
-    notes: ["po príchode domov sa rozsvietia svetlá v predsieni", "po sprche sa zapne ventilátor v kúpeľni", "upozornenie na mobil ak ste zabudli zatvoriť terasu alebo okno"],
+    notes: [
+      "automatické zamykanie dverí na noc", 
+      "po príchode domov sa rozsvietia svetlá v predsieni", 
+      "v repráku v kuchyni vám hlasový asisten oznámi že práčka už doprala", 
+      "po sprche sa zapne ventilátor v kúpeľni alebo sa zosilní rekuperácia", 
+      "upozornenie na mobil ak ste zabudli zatvoriť terasu, okno alebo garážovú bránu",
+      "občas vám vypadne internet a potrebujete reštartovať router? To zvládne SmartHome automaticky.",
+      "ovládanie garážovej brány priamo na obrazovke vášho auta [Android Auto / Apple CarPlay]",
+      "...takýchto automatizácií je nekonečne veľa a vždy sa dajú prispôsobiť vašim potrebám, môžte ich kedykoľvek zmeniť alebo doplniť",
+    ],
   },
   {
     title: "Náhrada nástenných ovládačov",
     prompt: "Všetko v jednom modernom tablete",
     description:
-      "Namiesto viacerých samostatných ovládačov – termostatu, ovládania rekuperácie či drahého videovrátnika – môžete mať všetko elegantne integrované v jednom dizajnovom tablete na stene. V prehľadnom rozhraní získate nielen ovládanie, ale aj aktuálne informácie o stave celého domu.",
+      "Namiesto viacerých samostatných ovládačov – termostatu, ovládania rekuperácie či drahého videovrátnika – môžete mať všetko elegantne integrované v jednom dizajnovom tablete na stene. V prehľadnom rozhraní získate nielen ovládanie, ale aj aktuálne informácie o stave celého domu. Dá sa vytvoriť aj 3D model vášho domu a okamžite vidieť v ktorých miestnostiach sa svieti, kde je pohyb a tak podobne.",
     technologies: [
       "Nástenný tablet",
+      "3D interaktívny model domu",
       "Integrácia systémov",
       "Prehľadné rozhranie"
     ],
