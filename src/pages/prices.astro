@@ -1,0 +1,88 @@
+---
+import GlowLineSeparator from "../components/ui/separator/GlowLineSeparator.astro";
+import Footer from "@/components/ui/elements/Footer.astro";
+import Header from "@/components/ui/elements/Header.astro";
+import HeroSection from "@/components/ui/elements/HeroSection.astro";
+import BaseHead from "@/components/ui/elements/BaseHead.astro";
+import AdvantageList from "@/components/lists/AdvantageList.astro";
+---
+
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <BaseHead title="Home Assistant" description="O systéme Home Assistant" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <HeroSection
+        title="Porovnanie a ceny"
+        subtitle="Informácie o cenách a možnostiach"
+      />
+
+      <p class="mt-2 text-[color:var(--color-text-muted)]">
+        Presnú cenu je ťažké určiť vopred – závisí od vašich požiadaviek a od
+        toho, aké zariadenia už doma máte. Dobrou správou je, že začať môžete aj
+        s jednoduchým riešením.
+      </p>
+
+      <p class="mt-2 text-[color:var(--color-text-muted)]">
+        Základom je centrálny server, ku ktorému sa dajú pripojiť napríklad iba
+        svetlá alebo garážová brána. Takýto štart vás vyjde povedzme na
+        <strong>150 – 350 €</strong>.
+      </p>
+
+      <p class="mt-2 text-[color:var(--color-text-muted)]">
+        Postupne si potom môžete rozšíriť systém podľa potreby – pridať
+        ovládanie kúrenia či rekuperácie, smart zamykanie dverí, monitorovanie
+        spotreby elektriny alebo vody a mnoho ďalších funkcií. Cena sa tak
+        prirodzene zvyšuje, no stále ostáva v rozumných hraniciach. Orientačne
+        sa pohybujeme od
+        <strong>150 € do 3000 €</strong>.
+      </p>
+
+      <p class="mt-2 text-[color:var(--color-text-muted)]">
+        Ak máte technické zručnosti, rád vám ukážem, ako systém funguje. Vďaka
+        tomu si neskôr môžete množstvo úprav a rozšírení spraviť sami a šetriť
+        tak ďalšie náklady.
+      </p>
+
+      <div class="mt-12">
+        <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
+          Porovnanie – Loxone, TapHome
+        </h4>
+
+        <p class="mt-2 text-[color:var(--color-text-muted)]">
+          Komerčné systémy ako <strong>Loxone</strong> či <strong
+            >TapHome</strong
+          > sú väčšinou uzatvorené. Zariadenia je možné dokupovať len od výrobcu
+          a to za vysoké ceny. Často vyžadujú aj špeciálnu elektroinštaláciu.
+        </p>
+
+        <p class="mt-2 text-[color:var(--color-text-muted)]">
+          Ich spoľahlivosť môže byť dobrá, no možnosti integrácie sú výrazne
+          obmedzené – nikdy nedosiahnu takú flexibilitu ako otvorený systém
+          <strong>Home Assistant</strong>.
+        </p>
+
+        <p class="mt-2 text-[color:var(--color-text-muted)]">
+          Pre lepšiu predstavu: keď som si nechal vypracovať ponuky v roku 2022,
+          <strong>Loxone</strong> vychádzalo približne na <strong
+            >35 000 €</strong
+          > a
+          <strong>TapHome</strong> na <strong>20 000 €</strong>. A to ešte bez
+          integrácie audiosystémov, televízorov, práčky, smart vysávača a
+          ďalších zariadení.
+        </p>
+
+        <div class="mt-12">
+          <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
+            Dalsie porovnania pribudnu...
+          </h4>
+        </div>
+
+        <GlowLineSeparator />
+      </div>
+      <Footer />
+    </main>
+  </body>
+</html>

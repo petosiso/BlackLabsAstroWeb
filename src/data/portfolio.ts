@@ -1,7 +1,7 @@
 import AlarmIcon from '../assets/logos/Alarm.svg?raw';
 
 
-export const projects = [
+export const portfolioData = [
 	{
 		title: "Kúrenie a teplá voda",
 		techStack: "tepelné čerpadlo • plynový kotol • elektrický kotol",
@@ -100,19 +100,6 @@ export const projects = [
 		icon: AlarmIcon,
 	},
 	{
-		title: "Tienenie",
-		techStack: "externé žalúzie • rolety • markízy • senzory slnečného svitu",
-		description:
-			"Automatické riadenie žalúzií alebo roliet podľa intenzity slnečného svitu, dennej doby alebo teploty v interiéri. Zvýšenie komfortu a úspora energie.",
-		notes: [
-			"zatienenie počas horúcich letných dní",
-			"automatické vytiahnutie pri východe slnka",
-			"ovládanie na diaľku cez mobil",
-			"prepojenie s kúrením alebo klimatizáciou pre úsporu energie",
-		],
-		icon: AlarmIcon,
-	},
-	{
 		title: "Audio",
 		techStack: "multiroom reproduktory • inteligentné asistenty • zosilňovače",
 		description:
@@ -122,6 +109,19 @@ export const projects = [
 			"individuálne playlisty v jednotlivých miestnostiach",
 			"automatické spustenie hudby v kúpeľni pri sprche",
 			"ovládanie hlasom alebo mobilom",
+		],
+		icon: AlarmIcon,
+	},
+	{
+		title: "Tienenie",
+		techStack: "externé žalúzie • rolety • markízy • senzory slnečného svitu",
+		description:
+			"Automatické riadenie žalúzií alebo roliet podľa intenzity slnečného svitu, dennej doby alebo teploty v interiéri. Zvýšenie komfortu a úspora energie.",
+		notes: [
+			"zatienenie počas horúcich letných dní",
+			"automatické vytiahnutie pri východe slnka",
+			"ovládanie na diaľku cez mobil",
+			"prepojenie s kúrením alebo klimatizáciou pre úsporu energie",
 		],
 		icon: AlarmIcon,
 	},

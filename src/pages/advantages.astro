@@ -1,0 +1,66 @@
+---
+import GlowLineSeparator from "../components/ui/separator/GlowLineSeparator.astro";
+import Footer from "@/components/ui/elements/Footer.astro";
+import Header from "@/components/ui/elements/Header.astro";
+import HeroSection from "@/components/ui/elements/HeroSection.astro";
+import BaseHead from "@/components/ui/elements/BaseHead.astro";
+import AdvantageList from "@/components/lists/AdvantageList.astro";
+---
+
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <BaseHead title="Home Assistant" description="O systéme Home Assistant" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <HeroSection
+        title="Home Assistant"
+        subtitle="Viac o systéme Home Assistant a jeho výhodách"
+      />
+
+      <div class="mb-10">
+        <h3 class="text-2xl md:text-3xl font-semibold text-foreground">
+          Home Assistant
+        </h3>
+
+        <p class="mt-2 text-[color:var(--color-text-muted)]">
+          Najväčšou prednosťou systému <strong>Home Assistant</strong> je jeho otvorenosť.
+          Vznikol vďaka komunite nadšencov, ktorá ho neustále rozvíja a prináša nové
+          možnosti a integrácie.
+        </p>
+
+        <p class="mt-2 text-[color:var(--color-text-muted)]">
+          Nie ste obmedzení jedným výrobcom zariadení. Home Assistant podporuje
+          otvorené štandardy ako <strong>Zigbee</strong>, <strong>ModBus</strong
+          > a mnohé ďalšie. Vďaka obrovskej komunite používateľov a vývojárov pribúdajú
+          integrácie, ktoré iné smart home systémy nedokážu ponúknuť.
+        </p>
+
+        <p class="mt-2 text-[color:var(--color-text-muted)]">
+          Zabudnite na desiatky rôznych aplikácií vo vašom mobile. Ovládajte
+          kúrenie, klimatizáciu, vstupnú či garážovú bránu, robotický vysávač,
+          kamery, rádio a ďalšie zariadenia pohodlne <strong
+            >z jedného prehľadného systému</strong
+          >.
+        </p>
+
+        <p class="mt-2 text-[color:var(--color-text-muted)]">
+          Možnosť <strong>3D interaktívnej vizualizácie vášho domu</strong> – na
+          obrazovke uvidíte realistický model miestností. Ak je v izbe zapnuté svetlo,
+          rozsvieti sa aj vo vizualizácii. Pri každom prvku máte zároveň
+          <strong>tlačidlo na okamžité ovládanie</strong> svetiel či iných zariadení.
+        </p>
+      </div>
+
+      <AdvantageList
+        itemsCount={Number.MAX_VALUE}
+        centered={false}
+        includeNotes={true}
+      />
+
+      <GlowLineSeparator />
+    </main>
+    <Footer />
+  </body>
+</html>

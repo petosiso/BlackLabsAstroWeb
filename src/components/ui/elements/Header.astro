@@ -1,8 +1,8 @@
 ---
-import { SITE_TITLE } from '../../consts';
+import { SITE_TITLE } from '../../../consts';
+import ThemeToggle from '../button/ThemeToggle.astro';
 import HeaderLink from './HeaderLink.astro';
-import ThemeToggle from '../ui/button/ThemeToggle.astro';
----
+ ---
 
 <header class="bg-background text-foreground border-b sw-header">
     <nav class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between">
@@ -13,7 +13,8 @@ import ThemeToggle from '../ui/button/ThemeToggle.astro';
             <div class="internal-links hidden md:flex items-center gap-2 ml-1">
                 <HeaderLink href="/" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Domov</HeaderLink>
                 <HeaderLink href="/portfolio" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Oblasti použitia</HeaderLink>
-                <HeaderLink href="/homeassistant" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Home Assistant</HeaderLink>
+                <HeaderLink href="/advantages" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Výhody</HeaderLink>
+                <HeaderLink href="/prices" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Porovnanie a ceny</HeaderLink>
                 <HeaderLink href="/about" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">O mne</HeaderLink>
                 <a href="#contact" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Kontakt</a>
             </div>

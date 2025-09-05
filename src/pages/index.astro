@@ -1,18 +1,14 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Footer from "../components/sections/Footer.astro";
-import Header from "../components/sections/Header.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
-import HeroSection from "../components/sections/HeroSection.astro";
-import SkillsSection from "../components/sections/SkillsSection.astro";
-import { skills } from "../data/skills";
-import WorkExperience from "../components/sections/WorkExperience.astro";
-import { work } from "../data/work";
-import ArrowSeparator from "../components/ui/separator/ArrowSeparator.astro";
+ import ArrowSeparator from "../components/ui/separator/ArrowSeparator.astro";
 import GlowLineSeparator from "../components/ui/separator/GlowLineSeparator.astro";
-
-
 import PhotoCarousel from "@/components/ui/PhotoCarousel/PhotoCarousel.astro";
+import Footer from "@/components/ui/elements/Footer.astro";
+import Header from "@/components/ui/elements/Header.astro";
+import HeroSection from "@/components/ui/elements/HeroSection.astro";
+import BaseHead from "@/components/ui/elements/BaseHead.astro";
+import PortfolioSection from "@/components/sections/PortfolioSection.astro";
+import AdvantageSection from "@/components/sections/AdvantageSection.astro";
 
 // skills are imported from src/data/skills
 ---
@@ -42,7 +38,10 @@ import PhotoCarousel from "@/components/ui/PhotoCarousel/PhotoCarousel.astro";
         subtitle="Pozdvihnite svoj domov na novú úroveň za bezkonkurenčnú cenu"
         showCTA
         primaryCTA={{ text: "Prezerať možnosti", href: "/portfolio" }}
-        secondaryCTA={{ text: "Systém HomeAssistant a jeho výhody", href: "/homeassistant" }}
+        secondaryCTA={{
+          text: "Systém HomeAssistant a jeho výhody",
+          href: "/advantages",
+        }}
       />
 
       <section class="py-6">
@@ -50,9 +49,9 @@ import PhotoCarousel from "@/components/ui/PhotoCarousel/PhotoCarousel.astro";
           <PhotoCarousel />
         </div>
         <ArrowSeparator />
-        <SkillsSection title="Oblasti použitia" skills={skills} />
+        <PortfolioSection title="Oblasti použitia" />
         <ArrowSeparator />
-        <WorkExperience title="Výhody systému Home Assistant" items={work} />
+        <AdvantageSection title="Výhody smart domácnosti"   />
         <ArrowSeparator />
         <GlowLineSeparator />
       </section>

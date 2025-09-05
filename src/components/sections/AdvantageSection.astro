@@ -1,8 +1,7 @@
 ---
-import Timeline from "../ui/timeline/Timeline.astro";
-import { workIcons } from "../../data/work";
 import Button from "../ui/button/Button.astro";
-
+import AdvantageList from "../lists/AdvantageList.astro";
+  
 interface ExperienceItem {
   title: string;
   prompt: string;
@@ -12,11 +11,10 @@ interface ExperienceItem {
 }
 
 interface Props {
-  items: ExperienceItem[];
-  title?: string;
+   title?: string;
 }
 
-const { items, title } = Astro.props as Props;
+const {  title } = Astro.props as Props;
 ---
 
 <section class="w-full py-8">
@@ -29,15 +27,14 @@ const { items, title } = Astro.props as Props;
       )
     }
 
-    <Timeline
-      items={items.slice(0, 7)}
-      icons={workIcons}
-      centered={false}
+    <AdvantageList
+      itemsCount={7}
+      centered={true}
       includeNotes={true}
     />
 
     <div class="mt-8 mb-8 flex items-center justify-center gap-3">
-      <Button href={"/homeassistant"} variant="primary" size="lg"
+      <Button href={"/advantages"} variant="primary" size="lg"
         >{"Preskúmať viac výhod"}</Button
       >
     </div>
