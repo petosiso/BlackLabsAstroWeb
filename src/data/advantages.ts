@@ -1,5 +1,15 @@
- 
- 
+// src/data/advantages.ts
+import Home from "lucide-static/icons/home.svg";
+import TabletSmartphone from "lucide-static/icons/tablet-smartphone.svg";
+import PiggyBank from "lucide-static/icons/piggy-bank.svg";
+import Shield from "lucide-static/icons/shield.svg";
+import Smartphone from "lucide-static/icons/smartphone.svg";
+import BadgeDollarSign from "lucide-static/icons/badge-dollar-sign.svg";
+import Plug from "lucide-static/icons/plug.svg";
+import Leaf from "lucide-static/icons/leaf.svg";
+import Lock from "lucide-static/icons/lock.svg";
+import Puzzle from "lucide-static/icons/puzzle.svg";
+
 export const advantagesData = [
   {
     title: "Komfort bývania",
@@ -10,18 +20,19 @@ export const advantagesData = [
       "Smart zámky",
       "Osvetlenie",
       "Automatizácie",
-      "Integrácia multimédií"
+      "Integrácia multimédií",
     ],
     notes: [
-      "automatické zamykanie dverí na noc", 
-      "po príchode domov sa rozsvietia svetlá v predsieni", 
-      "v repráku v kuchyni vám hlasový asisten oznámi že práčka už doprala", 
-      "po sprche sa zapne ventilátor v kúpeľni alebo sa zosilní rekuperácia", 
+      "automatické zamykanie dverí na noc",
+      "po príchode domov sa rozsvietia svetlá v predsieni",
+      "v repráku v kuchyni vám hlasový asisten oznámi že práčka už doprala",
+      "po sprche sa zapne ventilátor v kúpeľni alebo sa zosilní rekuperácia",
       "upozornenie na mobil ak ste zabudli zatvoriť terasu, okno alebo garážovú bránu",
       "občas vám vypadne internet a potrebujete reštartovať router? To zvládne SmartHome automaticky.",
       "ovládanie garážovej brány priamo na obrazovke vášho auta [Android Auto / Apple CarPlay]",
       "...takýchto automatizácií je nekonečne veľa a vždy sa dajú prispôsobiť vašim potrebám, môžte ich kedykoľvek zmeniť alebo doplniť",
     ],
+    icon: Home,
   },
   {
     title: "Náhrada nástenných ovládačov",
@@ -32,9 +43,10 @@ export const advantagesData = [
       "Nástenný tablet",
       "3D interaktívny model domu",
       "Integrácia systémov",
-      "Prehľadné rozhranie"
+      "Prehľadné rozhranie",
     ],
     notes: [],
+    icon: TabletSmartphone,
   },
   {
     title: "Úspora financií",
@@ -44,9 +56,10 @@ export const advantagesData = [
     technologies: [
       "Monitoring spotreby energií",
       "Smart ovládanie čerpadla",
-      "Optimalizácia rekuperácie"
+      "Optimalizácia rekuperácie",
     ],
     notes: [],
+    icon: PiggyBank,
   },
   {
     title: "Bezpečnosť",
@@ -57,9 +70,10 @@ export const advantagesData = [
       "Alarm",
       "Detektory pohybu",
       "Detektory dymu a vody",
-      "Kódové klávesnice"
+      "Kódové klávesnice",
     ],
     notes: [],
+    icon: Shield,
   },
   {
     title: "Ovládanie na diaľku",
@@ -69,9 +83,10 @@ export const advantagesData = [
     technologies: [
       "Mobilná aplikácia",
       "Bezpečné pripojenie",
-      "Diaľkové ovládanie"
+      "Diaľkové ovládanie",
     ],
     notes: [],
+    icon: Smartphone,
   },
   {
     title: "Veľmi výhodná cena",
@@ -81,11 +96,11 @@ export const advantagesData = [
     technologies: [
       "Open-source platforma",
       "Podpora viacerých výrobcov",
-      "Komunitný vývoj"
+      "Komunitný vývoj",
     ],
     notes: [],
+    icon: BadgeDollarSign,
   },
-
   {
     title: "Bez nutnosti špeciálnej elektroinštalácie",
     prompt: "SmartHome funguje aj v hotovom dome",
@@ -94,9 +109,10 @@ export const advantagesData = [
     technologies: [
       "Štandardná elektroinštalácia",
       "Bezdrôtové zariadenia",
-      "Rozšíriteľnosť pri výstavbe"
+      "Rozšíriteľnosť pri výstavbe",
     ],
     notes: [],
+    icon: Plug,
   },
   {
     title: "Ekologické riešenie",
@@ -106,21 +122,19 @@ export const advantagesData = [
     technologies: [
       "Automatizované úspory",
       "Optimalizácia spotreby",
-      "Zelené riešenia"
+      "Zelené riešenia",
     ],
     notes: [],
+    icon: Leaf,
   },
   {
     title: "Lokálne ovládanie",
     prompt: "Funguje aj bez internetu",
     description:
       "Home Assistant beží kompletne lokálne – bez cloudu, bez posielania dát na internet. Vaša domácnosť funguje nezávisle od internetu a vaše súkromie je maximálne chránené.",
-    technologies: [
-      "Lokálny server",
-      "Ochrana súkromia",
-      "Offline režim"
-    ],
+    technologies: ["Lokálny server", "Ochrana súkromia", "Offline režim"],
     notes: [],
+    icon: Lock,
   },
   {
     title: "Flexibilita a rozšíriteľnosť",
@@ -130,10 +144,9 @@ export const advantagesData = [
     technologies: [
       "Modulárny systém",
       "Integrácia tisícov zariadení",
-      "Budúca pripravenosť"
+      "Budúca pripravenosť",
     ],
     notes: [],
+    icon: Puzzle,
   },
 ];
-
-
