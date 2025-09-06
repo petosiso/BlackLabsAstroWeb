@@ -1,33 +1,40 @@
 ---
 interface Props {
-  images: string[]; 
+  images: string[] | undefined;
 }
 const props = Astro.props as Props;
 ---
 
 <!-- rad s náhľadmi -->
 <div class="flex justify-center gap-4 overflow-x-auto py-2">
-  {props.images?.map((src, i) => (
-    <img
-      src={src}
-      alt="gallery"
-      class="cursor-pointer rounded-lg shadow hover:opacity-80 transition w-12 h-12 object-cover flex-shrink-0"
-      data-preview
-      data-index={i}
-    />
-  ))}
+  {
+    props.images?.map((src, i) => (
+ <img
+  src={src}
+  alt="gallery"
+  class="cursor-pointer w-12 h-12 object-cover rounded-lg shadow border border-gray-600 bg-black 
+         flex-shrink-0 filter grayscale hover:grayscale-0 hover:border-primary hover:scale-105 transition"
+  data-preview
+  data-index={i}
+/>
+    ))
+  }
 </div>
 
 <script is:inline>
-  const previews = document.querySelectorAll('[data-preview]');
-  const imageSources = Array.from(previews).map(img => img.src);
+(() => {
+  const gallery = document.currentScript.closest("div"); // najbližší wrapper
+  const previews = gallery.querySelectorAll("[data-preview]");
+  if (previews.length === 0) return;
+
+  const imageSources = Array.from(previews).map((img) => img.src);
   let currentIndex = 0;
 
   function ensureLightboxRoot() {
-    let root = document.getElementById('lightbox-root');
+    let root = document.getElementById("lightbox-root");
     if (!root) {
-      root = document.createElement('div');
-      root.id = 'lightbox-root';
+      root = document.createElement("div");
+      root.id = "lightbox-root";
       document.body.appendChild(root);
     }
     return root;
@@ -38,7 +45,7 @@ const props = Astro.props as Props;
     const root = ensureLightboxRoot();
 
     root.innerHTML = `
-      <div class="fixed inset-0 bg-black/90 flex items-center justify-center z-[9999]">
+      <div id="lbOverlay" class="fixed inset-0 bg-black/90 flex items-center justify-center z-[9999]">
         <button id="lbClose" class="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
         <button id="lbPrev" class="absolute left-4 text-white text-4xl font-bold">&#10094;</button>
         <button id="lbNext" class="absolute right-4 text-white text-4xl font-bold">&#10095;</button>
@@ -46,13 +53,14 @@ const props = Astro.props as Props;
       </div>
     `;
 
-    const lbClose = root.querySelector('#lbClose');
-    const lbPrev = root.querySelector('#lbPrev');
-    const lbNext = root.querySelector('#lbNext');
-    const lbImg = root.querySelector('#lbImg');
+    const lbOverlay = root.querySelector("#lbOverlay");
+    const lbClose = root.querySelector("#lbClose");
+    const lbPrev = root.querySelector("#lbPrev");
+    const lbNext = root.querySelector("#lbNext");
+    const lbImg = root.querySelector("#lbImg");
 
     function close() {
-      root.innerHTML = '';
+      root.innerHTML = "";
     }
 
     function showPrev() {
@@ -65,22 +73,23 @@ const props = Astro.props as Props;
       lbImg.src = imageSources[currentIndex];
     }
 
-    lbClose.addEventListener('click', close);
-    lbPrev.addEventListener('click', showPrev);
-    lbNext.addEventListener('click', showNext);
+    lbClose.addEventListener("click", close);
+    lbPrev.addEventListener("click", showPrev);
+    lbNext.addEventListener("click", showNext);
 
-    root.addEventListener('click', (e) => {
-      if (e.target === root.firstChild) close();
+    lbOverlay.addEventListener("click", (e) => {
+      if (e.target === lbOverlay) close();
     });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') close();
-      if (e.key === 'ArrowLeft') showPrev();
-      if (e.key === 'ArrowRight') showNext();
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") close();
+      if (e.key === "ArrowLeft") showPrev();
+      if (e.key === "ArrowRight") showNext();
     }, { once: true });
   }
 
   previews.forEach((img, i) => {
-    img.addEventListener('click', () => openLightbox(i));
+    img.addEventListener("click", () => openLightbox(i));
   });
+})();
 </script>

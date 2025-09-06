@@ -34,7 +34,12 @@ export const portfolioData = [
       "bez nutnosti fyzického termostatu",
     ],
     icon: ThermometerSun,
-    images: ["/photocarousel/1.webp", "/photocarousel/2.webp"]
+    images: [
+      "/galleries/heating/h1.webp",
+      "/galleries/heating/h2.jpeg",
+      "/galleries/heating/h3.png",
+      "/galleries/heating/h4.png",
+    ]
 
   },
   {
@@ -49,6 +54,12 @@ export const portfolioData = [
       "zosilnené vetranie pri zvýšenej vlhkosti napríklad v kúpeľni",
     ],
     icon: Wind,
+    images: [
+      "/galleries/ventilation/1.jpg",
+      "/galleries/ventilation/2.png",
+      "/galleries/ventilation/3.png",
+      "/galleries/ventilation/4.jpg",
+    ]
   },
   {
     title: "Spotreba energií",
@@ -63,6 +74,12 @@ export const portfolioData = [
       "detekcia úniku vody - ak vidíte spotrebu vody keď nie ste doma, niečo nie je v poriadku",
     ],
     icon: Gauge,
+    images: [
+      "/galleries/energie/e1.png",
+      "/galleries/energie/e2.png",
+      "/galleries/energie/e3.webp",
+      "/galleries/energie/e4.png",
+    ]
   },
   {
     title: "Prístupový systém",
@@ -78,6 +95,12 @@ export const portfolioData = [
       "notifikácia na mobil ak ste práve zamkli ale napríklad okno ostalo otvorené",
     ],
     icon: KeySquare,
+    images: [
+      "/galleries/access/a1.png",
+      "/galleries/access/a2.png",
+      "/galleries/access/a3.png",
+      "/galleries/access/a4.png",
+    ]
   },
   {
     title: "Zabezpečovací systém",
