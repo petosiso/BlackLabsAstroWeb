@@ -1,0 +1,86 @@
+---
+interface Props {
+  images: string[]; 
+}
+const props = Astro.props as Props;
+---
+
+<!-- rad s náhľadmi -->
+<div class="flex justify-center gap-4 overflow-x-auto py-2">
+  {props.images?.map((src, i) => (
+    <img
+      src={src}
+      alt="gallery"
+      class="cursor-pointer rounded-lg shadow hover:opacity-80 transition w-12 h-12 object-cover flex-shrink-0"
+      data-preview
+      data-index={i}
+    />
+  ))}
+</div>
+
+<script is:inline>
+  const previews = document.querySelectorAll('[data-preview]');
+  const imageSources = Array.from(previews).map(img => img.src);
+  let currentIndex = 0;
+
+  function ensureLightboxRoot() {
+    let root = document.getElementById('lightbox-root');
+    if (!root) {
+      root = document.createElement('div');
+      root.id = 'lightbox-root';
+      document.body.appendChild(root);
+    }
+    return root;
+  }
+
+  function openLightbox(index) {
+    currentIndex = index;
+    const root = ensureLightboxRoot();
+
+    root.innerHTML = `
+      <div class="fixed inset-0 bg-black/90 flex items-center justify-center z-[9999]">
+        <button id="lbClose" class="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+        <button id="lbPrev" class="absolute left-4 text-white text-4xl font-bold">&#10094;</button>
+        <button id="lbNext" class="absolute right-4 text-white text-4xl font-bold">&#10095;</button>
+        <img id="lbImg" src="${imageSources[currentIndex]}" class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg" />
+      </div>
+    `;
+
+    const lbClose = root.querySelector('#lbClose');
+    const lbPrev = root.querySelector('#lbPrev');
+    const lbNext = root.querySelector('#lbNext');
+    const lbImg = root.querySelector('#lbImg');
+
+    function close() {
+      root.innerHTML = '';
+    }
+
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + imageSources.length) % imageSources.length;
+      lbImg.src = imageSources[currentIndex];
+    }
+
+    function showNext() {
+      currentIndex = (currentIndex + 1) % imageSources.length;
+      lbImg.src = imageSources[currentIndex];
+    }
+
+    lbClose.addEventListener('click', close);
+    lbPrev.addEventListener('click', showPrev);
+    lbNext.addEventListener('click', showNext);
+
+    root.addEventListener('click', (e) => {
+      if (e.target === root.firstChild) close();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') showPrev();
+      if (e.key === 'ArrowRight') showNext();
+    }, { once: true });
+  }
+
+  previews.forEach((img, i) => {
+    img.addEventListener('click', () => openLightbox(i));
+  });
+</script>

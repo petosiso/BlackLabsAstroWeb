@@ -34,6 +34,8 @@ export const portfolioData = [
       "bez nutnosti fyzického termostatu",
     ],
     icon: ThermometerSun,
+    images: ["/photocarousel/1.webp", "/photocarousel/2.webp"]
+
   },
   {
     title: "Vetranie a rekuperácia",

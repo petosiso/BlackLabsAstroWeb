@@ -1,6 +1,7 @@
 ---
 import { portfolioData } from "../../data/portfolio";
 import ChevronDown from "lucide-static/icons/chevron-down.svg";
+import ImageGallery from "../ui/imagegallery/ImageGallery.astro";
 const ICON_COLOR = "#41BDF5"; // tvoja farba
 const ICON_STROKE = 3; // „bold“ efekt
 
@@ -53,6 +54,10 @@ const props = Astro.props as Props;
             </div>
           )}
         </details>
+        <div>
+                  <ImageGallery images={p.images}/>
+
+        </div>
       </article>
     );
   })
