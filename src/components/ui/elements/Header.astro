@@ -1,67 +1,128 @@
 ---
-import { SITE_TITLE } from '../../../consts';
-import ThemeToggle from '../button/ThemeToggle.astro';
-import HeaderLink from './HeaderLink.astro';
- ---
+import { SITE_TITLE } from "../../../consts";
+import ThemeToggle from "../button/ThemeToggle.astro";
+import HeaderLink from "./HeaderLink.astro";
+---
 
-<header class="fixed top-0 left-0 w-full bg-background text-foreground border-b sw-header z-50">
-    <nav class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-            <a class="no-underline hover:opacity-90 flex items-center gap-2" href="/" aria-label="Home">
-                <img src="/favicon.png?v=1" alt="" aria-hidden="true" width="45" height="45" />
-            </a>
-            <div class="internal-links hidden md:flex items-center gap-2 ml-1">
-                <HeaderLink href="/" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Domov</HeaderLink>
-                <HeaderLink href="/portfolio" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Oblasti použitia</HeaderLink>
-                <HeaderLink href="/advantages" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Výhody</HeaderLink>
-                <HeaderLink href="/prices" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Porovnanie a ceny</HeaderLink>
-                <HeaderLink href="/about" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">O mne</HeaderLink>
-                <a href="#contact" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Kontakt</a>
-            </div>
-        </div>
-        <div class="flex items-center gap-3">
-            <ThemeToggle />
-            <button type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" data-menu-btn class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg text-[color:var(--color-text-secondary)] hover:text-white">
-                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"/></svg>
-            </button>
-        </div>
-    </nav>
-    <div id="mobile-menu" class="md:hidden hidden border-t">
-        <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-2">
-            <div class="flex flex-col">
-                <HeaderLink href="/" class="px-2 py-3">Domov</HeaderLink>
-                <HeaderLink href="/portfolio" class="px-2 py-3">Oblasti použitia</HeaderLink>
-                <HeaderLink href="/advantages" class="px-2 py-3">Výhody</HeaderLink>
-                <HeaderLink href="/prices" class="px-2 py-3">Ceny</HeaderLink>
-                <HeaderLink href="/about" class="px-2 py-3">O mne</HeaderLink>
-                <a href="#contact" class="px-2 py-3">Kontakt</a>
-            </div>
-        </div>
+<header
+  class="fixed top-0 left-0 w-full bg-background text-foreground border-b sw-header z-50"
+>
+  <nav class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <a
+        class="no-underline hover:opacity-90 flex items-center gap-2"
+        href="/"
+        aria-label="Home"
+      >
+        <!-- Mobile logo -->
+        <img
+          src="/blacklabs.png?v=1"
+          alt="BlackLabs logo"
+          width="180"
+          height="60"
+          class="block md:hidden"
+        />
+
+        <!-- Desktop logo -->
+        <img
+          src="/favicon.png?v=1"
+          alt="Favicon logo"
+          width="45"
+          height="45"
+          class="hidden md:block"
+        />
+      </a>
+      <div class="internal-links hidden md:flex items-center gap-2 ml-1">
+        <HeaderLink
+          href="/"
+          class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline"
+          >Domov</HeaderLink
+        >
+        <HeaderLink
+          href="/portfolio"
+          class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline"
+          >Oblasti použitia</HeaderLink
+        >
+        <HeaderLink
+          href="/advantages"
+          class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline"
+          >Výhody</HeaderLink
+        >
+        <HeaderLink
+          href="/prices"
+          class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline"
+          >Porovnanie a ceny</HeaderLink
+        >
+        <HeaderLink
+          href="/about"
+          class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline"
+          >O mne</HeaderLink
+        >
+        <a
+          href="#contact"
+          class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline"
+          >Kontakt</a
+        >
+      </div>
     </div>
+    <div class="flex items-center gap-3">
+      <ThemeToggle />
+      <button
+        type="button"
+        aria-label="Open menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        data-menu-btn
+        class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg text-[color:var(--color-text-secondary)] hover:text-white"
+      >
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+          ><path
+            fill="currentColor"
+            d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"></path></svg
+        >
+      </button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="md:hidden hidden border-t">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-2">
+      <div class="flex flex-col">
+        <HeaderLink href="/" class="px-2 py-3">Domov</HeaderLink>
+        <HeaderLink href="/portfolio" class="px-2 py-3"
+          >Oblasti použitia</HeaderLink
+        >
+        <HeaderLink href="/advantages" class="px-2 py-3">Výhody</HeaderLink>
+        <HeaderLink href="/prices" class="px-2 py-3">Ceny</HeaderLink>
+        <HeaderLink href="/about" class="px-2 py-3">O mne</HeaderLink>
+        <a href="#contact" class="px-2 py-3">Kontakt</a>
+      </div>
+    </div>
+  </div>
 </header>
 
 <script is:inline>
-  const btn = document.querySelector('[data-menu-btn]');
-  const panel = document.getElementById('mobile-menu');
+  const btn = document.querySelector("[data-menu-btn]");
+  const panel = document.getElementById("mobile-menu");
   function toggleMenu() {
     if (!panel || !btn) return;
-    const isOpen = !panel.classList.contains('hidden');
+    const isOpen = !panel.classList.contains("hidden");
     if (isOpen) {
-      panel.classList.add('hidden');
-      btn.setAttribute('aria-expanded', 'false');
+      panel.classList.add("hidden");
+      btn.setAttribute("aria-expanded", "false");
     } else {
-      panel.classList.remove('hidden');
-      btn.setAttribute('aria-expanded', 'true');
+      panel.classList.remove("hidden");
+      btn.setAttribute("aria-expanded", "true");
     }
   }
-  btn?.addEventListener('click', toggleMenu);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') {
-    if (!panel?.classList.contains('hidden')) toggleMenu();
-  }});
-  document.addEventListener('click', (e) => {
+  btn?.addEventListener("click", toggleMenu);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (!panel?.classList.contains("hidden")) toggleMenu();
+    }
+  });
+  document.addEventListener("click", (e) => {
     if (!panel || !btn) return;
     const target = e.target;
     const clickedInside = panel.contains(target) || btn.contains(target);
-    if (!clickedInside && !panel.classList.contains('hidden')) toggleMenu();
+    if (!clickedInside && !panel.classList.contains("hidden")) toggleMenu();
   });
 </script>
