@@ -7,14 +7,12 @@ import GlowLineSeparator from "../components/ui/separator/GlowLineSeparator.astr
 import BaseHead from "@/components/ui/elements/BaseHead.astro";
 import PortfolioList from "@/components/lists/PortfolioList.astro";
 import { number } from "astro:schema";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
 ---
 
 <html lang="en" data-theme="dark" class="dark">
   <head>
-    <BaseHead
-      title="Oblasti použitia"
-      description="Vybrané oblasti kde by sa vám zišiel domáci asistent"
-    />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />

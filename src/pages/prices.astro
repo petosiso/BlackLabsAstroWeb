@@ -5,11 +5,12 @@ import Header from "@/components/ui/elements/Header.astro";
 import HeroSection from "@/components/ui/elements/HeroSection.astro";
 import BaseHead from "@/components/ui/elements/BaseHead.astro";
 import AdvantageList from "@/components/lists/AdvantageList.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
 ---
 
 <html lang="en" data-theme="dark" class="dark">
   <head>
-    <BaseHead title="Home Assistant" description="O systéme Home Assistant" />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />
@@ -20,9 +21,12 @@ import AdvantageList from "@/components/lists/AdvantageList.astro";
       />
 
       <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-        Presnú cenu je ťažké určiť vopred – závisí od vašich požiadaviek a od
-        toho, aké zariadenia už doma máte. Dobrou správou je, že začať môžete aj
-        s jednoduchým riešením.
+        Presnú cenu integrácie systému
+        <span class="text-justify mt-2 text-[color:var(--color-primary)]">
+          Home assistant
+        </span>
+        je ťažké určiť vopred – závisí od vašich požiadaviek a od toho, aké zariadenia
+        už doma máte. Dobrou správou je, že začať môžete aj s jednoduchým riešením.
       </p>
 
       <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
@@ -37,7 +41,9 @@ import AdvantageList from "@/components/lists/AdvantageList.astro";
         spotreby elektriny alebo vody a mnoho ďalších funkcií. Cena sa tak
         prirodzene zvyšuje, no stále ostáva v rozumných hraniciach. Orientačne
         sa pohybujeme od
-        <strong>150 € do 3000 €</strong>.
+        <strong>150 € do 2000 €</strong>. Samozrejme, ak ste napríklad tzv.
+        "audiofil" a budete chcieť prémiové HiFi v dome tak to bude o niečo viac
+        :)
       </p>
 
       <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
@@ -55,12 +61,13 @@ import AdvantageList from "@/components/lists/AdvantageList.astro";
           Komerčné systémy ako <strong>Loxone</strong> či <strong
             >TapHome</strong
           > sú väčšinou uzatvorené. Zariadenia je možné dokupovať len od výrobcu
-          a to za vysoké ceny. Často vyžadujú aj špeciálnu elektroinštaláciu.
+          a to za vysoké ceny. Vyžadujú aj špeciálnu elektroinštaláciu.
         </p>
 
         <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-          Ich spoľahlivosť môže byť dobrá, no možnosti integrácie sú výrazne
-          obmedzené – nikdy nedosiahnu takú flexibilitu ako otvorený systém
+          Ich spoľahlivosť a robustnosť je dobrá, no možnosti integrácie sú
+          výrazne obmedzené – nikdy nedosiahnu takú flexibilitu ako otvorený
+          systém
           <strong>Home Assistant</strong>.
         </p>
 
@@ -74,15 +81,63 @@ import AdvantageList from "@/components/lists/AdvantageList.astro";
           ďalších zariadení.
         </p>
 
-        <div class="mt-12">
-          <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
-            Ďalšie porovnania pribudnú v dohľadnej dobe...
-          </h4>
-        </div>
+        <div class="mt-12"></div>
+        <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
+          Porovnanie – Fibaro, Homey
+        </h4>
 
-        <GlowLineSeparator />
+        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+          <strong>Fibaro</strong> aj <strong>Homey</strong> pôsobia ako univerzálne
+          smart centrály, no v skutočnosti sú uzavreté a drahé. Fibaro tlačí používateľov
+          do nákupu vlastných zariadení, ktoré sú výrazne predražené, a integrácia
+          s inými značkami je slabá.
+        </p>
+
+        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+          <strong>Homey</strong> sa prezentuje ako „všetko v jednom“, no veľa integrácií
+          funguje len vďaka komunite alebo plateným doplnkom. Ak výrobca ukončí podporu,
+          môžete prísť o funkčnosť zo dňa na deň. Navyše, pokročilé funkcie sú dostupné
+          iba v drahej verzii <strong>Homey Pro</strong>.
+        </p>
+
+        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+          Oproti tomu <strong>Home Assistant</strong> je úplne otvorený – integruje
+          tisíce zariadení rôznych značiek, bez licenčných poplatkov a bez závislosti
+          na jednom výrobcovi. Získate flexibilitu, nižšie náklady a istotu, že systém
+          bude rásť spolu s vašimi potrebami.
+        </p>
       </div>
-      <Footer />
+
+      <div class="mt-12">
+        <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
+          Porovnanie – Aqara, Xiaomi, Legrand
+        </h4>
+
+        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+          Riešenia ako <strong>Aqara</strong>, <strong>Xiaomi</strong> či
+          <strong>Legrand</strong> lákajú nízkou cenou a jednoduchou inštaláciou.
+          Sú vhodné na základné úlohy ako spínanie svetiel či notifikácie zo senzorov,
+          no väčšinou sú viazané na vlastnú mobilnú aplikáciu alebo cloud.
+        </p>
+
+        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+          Ich možnosti sú výrazne obmedzené – nedokážu ovládať kúrenie v dome,
+          nemajú seriózne nástroje na monitoring spotreby energií, nevedia
+          integrovať bezpečnostný alarm ani komplexné multimediálne zariadenia.
+          Fungujú len v úzkom rozsahu a rýchlo narazíte na ich limity.
+        </p>
+
+        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+          <strong>Home Assistant</strong> tieto produkty síce dokáže pripojiť, ale
+          hlavne ich dokáže prepojiť s ďalšími technológiami. Získate jednotný systém,
+          ktorý zvládne inteligentne riadiť kúrenie, sledovať energie, integrovať
+          alarm, kamery či spotrebiče – jednoducho ponúka komplexnosť, ktorú spotrebiteľské
+          riešenia nikdy nedosiahnu.
+        </p>
+      </div>
+
+      <GlowLineSeparator />
     </main>
+    <Footer />
   </body>
 </html>
