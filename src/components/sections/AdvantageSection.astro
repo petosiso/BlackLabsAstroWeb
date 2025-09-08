@@ -1,6 +1,7 @@
 ---
 import Button from "../ui/button/Button.astro";
 import AdvantageList from "../lists/AdvantageList.astro";
+import { fade } from "astro:transitions";
   
 interface ExperienceItem {
   title: string;
@@ -21,16 +22,16 @@ const {  title } = Astro.props as Props;
   <div class="mx-auto max-w-6xl px-5 md:px-6">
     {
       title && (
-        <h2 class="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">
+        <h2 class="text-3xl pb-10 md:text-4xl font-semibold text-center mb-10 text-foreground">
           {title}
         </h2>
       )
     }
 
     <AdvantageList
-      itemsCount={7}
-      centered={true}
-      includeNotes={true}
+      itemsCount={5}
+      centered={false}
+      allOpen={false}
     />
 
     <div class="mt-8 mb-8 flex items-center justify-center gap-3">

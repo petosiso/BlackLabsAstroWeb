@@ -7,25 +7,31 @@ const ICON_STROKE = 3; // „bold“ efekt
 
 interface Props {
   itemsCount: number;
-  includeNotes: boolean;
-  centered: boolean;
+  includeDetails: boolean;
 }
 const props = Astro.props as Props;
 ---
 
 {
-  portfolioData.slice(0, props.itemsCount).map((p) => {
+  portfolioData.slice(0, props.itemsCount).map((p, index) => {
     const Icon = p.icon;
 
     return (
       <article class={`flex flex-col card-surface p-6 relative  `}>
-        <details class="group">
+        <details
+          class="group"
+          {...(props.includeDetails === true ? { open: true } : {})}
+        >
           <summary
-            class={` p-6 relative ${props.centered ? "flex flex-col items-center text-center" : " flex flex-col"}`}
+            class={`cursor-pointer p-6 relative ${props.includeDetails ? " flex flex-col" : "flex flex-col items-center text-center"}`}
           >
-            <div class={`w-full flex pb-2 text-[var(--accent)] [&>svg]:w-6 [&>svg]:h-6  ${props.centered ? "justify-center" : "justify-end"}`}>
-                 <Icon style={`stroke:${ICON_COLOR}; stroke-width:${ICON_STROKE}`}  />
-              </div>
+            <div
+              class={`w-full flex pb-2 text-[var(--accent)] [&>svg]:w-6 [&>svg]:h-6  ${props.includeDetails ? "justify-end" : "justify-center"}`}
+            >
+              <Icon
+                style={`stroke:${ICON_COLOR}; stroke-width:${ICON_STROKE}`}
+              />
+            </div>
             <h3 class="text-xl font-semibold text-foreground m-0">{p.title}</h3>
             <p class="text-sm text-[color:var(--color-text-muted)] m-0">
               {p.techStack}
@@ -37,7 +43,7 @@ const props = Astro.props as Props;
             {p.description}
           </p>
 
-          {props.includeNotes && (
+          {props.includeDetails && (
             <div>
               <p class="mt-3 text-[color:var(--color-text-muted)]">
                 {"Príklady použitia:"}
@@ -55,8 +61,7 @@ const props = Astro.props as Props;
           )}
         </details>
         <div>
-                  <ImageGallery images={p.images}/>
-
+          <ImageGallery images={p.images} />
         </div>
       </article>
     );

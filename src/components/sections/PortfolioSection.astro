@@ -18,14 +18,14 @@ const { title } = Astro.props as Props;
   <div class="mx-auto max-w-6xl px-4">
     {
       title && (
-        <h2 class="text-3xl md:text-4xl font-semibold text-center mb-6 text-foreground">
+        <h2 class="text-3xl md:text-4xl font-semibold text-center mb-6 pb-10 text-foreground">
           {title}
         </h2>
       )
     }
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mt-2">
-      <PortfolioList itemsCount={8}  includeNotes={false} centered={true}/>
+      <PortfolioList itemsCount={8}  includeDetails={false} />
     </div>
 
     <div class="mt-8 mb-8 flex items-center justify-center gap-3">

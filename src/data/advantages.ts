@@ -15,30 +15,32 @@ export const advantagesData = [
     title: "Komfort bývania",
     prompt: "Automatizácie a inteligentné ovládanie",
     description:
-      "Vďaka smart automatizáciám a ovládaniu na diaľku máte všetko pod kontrolou.",
+      "Vďaka smart automatizáciám a ovládaniu na diaľku máte všetko pod kontrolou. Všetky zariadenia v domácnosti sú prepojené a môžu navzájom interagovať.",
     technologies: [
       "Smart zámky",
       "Osvetlenie",
       "Automatizácie",
+      "Upozornenia na mobil",
       "Integrácia multimédií",
     ],
     notes: [
-      "automatické zamykanie dverí na noc",
-      "po príchode domov sa rozsvietia svetlá v predsieni",
-      "v repráku v kuchyni vám hlasový asisten oznámi že práčka už doprala",
-      "po sprche sa zapne ventilátor v kúpeľni alebo sa zosilní rekuperácia",
-      "upozornenie na mobil ak ste zabudli zatvoriť terasu, okno alebo garážovú bránu",
-      "občas vám vypadne internet a potrebujete reštartovať router? To zvládne SmartHome automaticky.",
-      "ovládanie garážovej brány priamo na obrazovke vášho auta [Android Auto / Apple CarPlay]",
-      "...takýchto automatizácií je nekonečne veľa a vždy sa dajú prispôsobiť vašim potrebám, môžte ich kedykoľvek zmeniť alebo doplniť",
+      "🔒 Automatické uzamknutie dverí na noc pre vyššiu bezpečnosť",
+      "💡 Svetlá v predsieni sa rozsvietia hneď po príchode domov",
+      "🔊 Hlasový asistent vám v kuchyni oznámi, že práčka doprala",
+      "🌬️ Po sprche sa automaticky spustí ventilátor alebo zosilní rekuperácia",
+      "📱 Upozornenie na mobil, ak zostane otvorené okno, terasa alebo garážová brána",
+      "🌐 SmartHome sám reštartuje router, keď vypadne internet",
+      "🌬️ Zosilňnenie rekuperácie ak je zapnutý digestor v kuchyni",
+      "🚗 Ovládanie garážovej brány priamo z obrazovky auta [Android Auto / Apple CarPlay]",
+      "♾️ Nekonečné možnosti automatizácií – prispôsobené vašim potrebám, kedykoľvek rozšíriteľné a upraviteľné",
     ],
     icon: Home,
   },
   {
-    title: "Náhrada nástenných ovládačov",
-    prompt: "Všetko v jednom modernom tablete",
+    title: "Náhrada  ovládačov a appiek",
+    prompt: "Všetko v jednom - v jednej appke v mobile alebo na nástennom tablete",
     description:
-      "Namiesto viacerých samostatných ovládačov – termostatu, ovládania rekuperácie či drahého videovrátnika – môžete mať všetko elegantne integrované v jednom dizajnovom tablete na stene. V prehľadnom rozhraní získate nielen ovládanie, ale aj aktuálne informácie o stave celého domu. Dá sa vytvoriť aj 3D model vášho domu a okamžite vidieť v ktorých miestnostiach sa svieti, kde je pohyb a tak podobne.",
+      "Namiesto viacerých samostatných ovládačov – termostatu, ovládania rekuperácie či drahého videovrátnika – môžete mať všetko elegantne integrované v jednom dizajnovom tablete na stene. V prehľadnom rozhraní získate nielen ovládanie, ale aj aktuálne informácie o stave celého domu. Dá sa vytvoriť aj 3D model vášho domu a okamžite vidieť v ktorých miestnostiach sa svieti, kde je pohyb a tak podobne. Rovnako tak nahradíme aj viaceré appky vo vašom mobile do jednej.",
     technologies: [
       "Nástenný tablet",
       "3D interaktívny model domu",
@@ -49,17 +51,30 @@ export const advantagesData = [
     icon: TabletSmartphone,
   },
   {
-    title: "Úspora financií",
-    prompt: "Optimalizácia spotreby a nižšie náklady",
+    title: "Ovládanie na diaľku",
+    prompt: "Všetko máte pod kontrolou, nech ste kdekoľvek. Vhodné na prenájmy a chaty.",
     description:
-      "Nemusíte dokupovať drahé samostatné zariadenia – termostat k tepelnému čerpadlu, ovládanie rekuperácie či videovrátnik. Vždy máte detailný prehľad o spotrebe elektriny, plynu a vody. Na základe dát môžete jednoducho zmeniť svoje návyky a šetriť peniaze.",
+      "Bezpečné pripojenie k domu aj na diaľku. Kedykoľvek môžete cez mobilný telefón alebo počítač skontrolovať stav a ovládať všetky zariadenia vo vašej domácnosti.",
     technologies: [
-      "Monitoring spotreby energií",
-      "Smart ovládanie čerpadla",
-      "Optimalizácia rekuperácie",
+      "Mobilná aplikácia",
+      "Bezpečné pripojenie",
+      "Diaľkové ovládanie",
     ],
     notes: [],
-    icon: PiggyBank,
+    icon: Smartphone,
+  },
+  {
+    title: "Bez nutnosti špeciálnej elektroinštalácie",
+    prompt: "SmartHome funguje aj v existujúcom dome, byte či na chate.",
+    description:
+      "Nemusíte nijak špeciálne upravovať elektroinštaláciu. Smart domácnosť vieme vytvoriť aj vo vašom už postavenom dome výberom vhodných zariadení. Ak ste v priebehu výstavby, všetko je ešte jednoduchšie a máte viac možností, no smart funkcie vieme dodať aj do existujúcej nehnuteľnosti bez zásadných úprav.",
+    technologies: [
+      "Štandardná elektroinštalácia",
+      "Bezdrôtové zariadenia",
+      "Rozšíriteľnosť pri výstavbe",
+    ],
+    notes: [],
+    icon: Plug,
   },
   {
     title: "Bezpečnosť",
@@ -75,18 +90,20 @@ export const advantagesData = [
     notes: [],
     icon: Shield,
   },
+
+
   {
-    title: "Ovládanie na diaľku",
-    prompt: "Všetko máte pod kontrolou, nech ste kdekoľvek",
+    title: "Úspora financií",
+    prompt: "Optimalizácia spotreby a nižšie náklady",
     description:
-      "Bezpečné pripojenie k domu aj na diaľku. Kedykoľvek môžete cez mobilný telefón alebo počítač skontrolovať stav a ovládať všetky zariadenia vo vašej domácnosti.",
+      "Nemusíte dokupovať drahé samostatné zariadenia – termostat k tepelnému čerpadlu, ovládanie rekuperácie či videovrátnik. Vždy máte detailný prehľad o spotrebe elektriny, plynu a vody. Na základe dát môžete jednoducho kontrolovať svoju spotrebu energií.",
     technologies: [
-      "Mobilná aplikácia",
-      "Bezpečné pripojenie",
-      "Diaľkové ovládanie",
+      "Monitoring spotreby energií",
+      "Smart ovládanie kúrenia",
+      "Optimalizácia rekuperácie",
     ],
     notes: [],
-    icon: Smartphone,
+    icon: PiggyBank,
   },
   {
     title: "Veľmi výhodná cena",
@@ -100,19 +117,6 @@ export const advantagesData = [
     ],
     notes: [],
     icon: BadgeDollarSign,
-  },
-  {
-    title: "Bez nutnosti špeciálnej elektroinštalácie",
-    prompt: "SmartHome funguje aj v hotovom dome",
-    description:
-      "Nemusíte nijak špeciálne upravovať elektroinštaláciu. Smart domácnosť vieme vytvoriť aj vo vašom už postavenom dome výberom vhodných zariadení. Ak ste v priebehu výstavby, všetko je ešte jednoduchšie a máte viac možností, no smart funkcie vieme dodať aj do existujúcej nehnuteľnosti bez zásadných úprav.",
-    technologies: [
-      "Štandardná elektroinštalácia",
-      "Bezdrôtové zariadenia",
-      "Rozšíriteľnosť pri výstavbe",
-    ],
-    notes: [],
-    icon: Plug,
   },
   {
     title: "Ekologické riešenie",

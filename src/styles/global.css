@@ -33,7 +33,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: var(--color-text-secondary);
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.7;
 }
 
@@ -149,7 +149,7 @@ hr {
 
 @media (max-width: 720px) {
 	body {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	main {

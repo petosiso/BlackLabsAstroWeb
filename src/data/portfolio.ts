@@ -114,6 +114,10 @@ export const portfolioData = [
       "prehľad stavu všetkých okien a dverí",
     ],
     icon: Shield,
+    images: [
+      "/galleries/security/1.png",
+      "/galleries/security/2.png", 
+    ]
   },
   {
     title: "Garážová a vstupná brána",
@@ -126,6 +130,10 @@ export const portfolioData = [
       "notifikácia ak ostane otvorená",
     ],
     icon: DoorOpen,
+    images: [
+      "/galleries/gates/1.png",
+      "/galleries/gates/2.png", 
+    ]
   },
   {
     title: "Svetlá",
@@ -140,6 +148,10 @@ export const portfolioData = [
       "spínanie podľa pohybu v miestnosti - napríklad v noci alebo LED pásy pod kuchynskou linkou",
     ],
     icon: Lightbulb,
+    images: [
+      "/galleries/lights/1.png",
+      "/galleries/lights/2.png", 
+    ]
   },
   {
     title: "Audio",
@@ -153,6 +165,10 @@ export const portfolioData = [
       "ovládanie hlasom alebo mobilom",
     ],
     icon: Volume2,
+    images: [
+      "/galleries/audio/1.png",
+      "/galleries/audio/2.jpg", 
+    ]
   },
   {
     title: "Tienenie",
