@@ -41,9 +41,9 @@ body {
    Pages that manage layout with utility classes should add class `use-utility-layout` to <main> to opt out. */
 main:not(.use-utility-layout) {
 	width: 1280px;
-	max-width: calc(100% - 2em);
+	max-width: calc(100% - 1em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 3em 0em;
 }
 
 h1,

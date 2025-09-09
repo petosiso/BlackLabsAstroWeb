@@ -62,7 +62,7 @@ const props = Astro.props as Props;
                       </p>
                         <ul class="list-disc ml-5 text-[color:var(--color-text-secondary)]">
                             {item.notes.map((note) => (
-                            <li class="text-[color:var(--color-text-secondary)] list-disc ml-5">
+                            <li class="text-[color:var(--color-text-secondary)] list-disc ml-2 md:ml-5">
                               {note}
                             </li> ))}
                         </ul>
@@ -97,7 +97,7 @@ const props = Astro.props as Props;
     const Icon =item.icon;
 
 return(
-        <div class="relative pl-5 md:pl-16" >
+        <div class="relative pl-3 md:pl-16" >
           <div class="absolute left-0 md:left-5 top-3 md:top-4 size-2 md:size-3 rounded-full bg-[var(--accent)] ring-2 md:ring-4 ring-[color:var(--background)]"></div>
           <div class="card-surface p-4 md:p-6 w-full min-w-0" 
  >
@@ -129,7 +129,7 @@ return(
                  <p class=" text-[color:var(--color-text-muted)]">
                    {"Príklady použitia:"}
                 </p>
-                  <ul class="list-disc ml-5 text-[color:var(--color-text-secondary)]">
+                  <ul class="list-disc text-justify ml-0 text-[color:var(--color-text-secondary)]">
                       {item.notes.map((note) => (
                       <li class="text-[color:var(--color-text-secondary)] list-disc ml-5">
                         {note}
