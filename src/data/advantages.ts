@@ -18,6 +18,7 @@ export const advantagesData = [
       "Vďaka smart automatizáciám a ovládaniu na diaľku máte všetko pod kontrolou. Všetky zariadenia v domácnosti sú prepojené a môžu navzájom interagovať.",
     technologies: [
       "Smart zámky",
+      "Zónové kúrenie",
       "Osvetlenie",
       "Automatizácie",
       "Upozornenia na mobil",
@@ -25,6 +26,7 @@ export const advantagesData = [
     ],
     notes: [
       "🔒 Automatické uzamknutie dverí na noc pre vyššiu bezpečnosť",
+      "🔥 Zónová regulácia kúrenia a rekuperácie",
       "💡 Svetlá v predsieni sa rozsvietia hneď po príchode domov",
       "🔊 Hlasový asistent vám v kuchyni oznámi, že práčka doprala",
       "🌬️ Po sprche sa automaticky spustí ventilátor alebo zosilní rekuperácia",
@@ -44,6 +46,7 @@ export const advantagesData = [
     technologies: [
       "Nástenný tablet",
       "3D interaktívny model domu",
+      "V každej miestnosti dotykový display",
       "Integrácia systémov",
       "Prehľadné rozhranie",
     ],
@@ -70,6 +73,7 @@ export const advantagesData = [
       "Nemusíte nijak špeciálne upravovať elektroinštaláciu. Smart domácnosť vieme vytvoriť aj vo vašom už postavenom dome výberom vhodných zariadení. Ak ste v priebehu výstavby, všetko je ešte jednoduchšie a máte viac možností, no smart funkcie vieme dodať aj do existujúcej nehnuteľnosti bez zásadných úprav.",
     technologies: [
       "Štandardná elektroinštalácia",
+      "Všetko funguje aj keby smart sytém nebol dostupný",
       "Bezdrôtové zariadenia",
       "Rozšíriteľnosť pri výstavbe",
     ],

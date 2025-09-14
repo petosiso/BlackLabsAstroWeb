@@ -24,12 +24,13 @@ export const portfolioData = [
     title: "Kúrenie a teplá voda",
     techStack: "tepelné čerpadlo • plynový kotol • elektrický kotol",
     description:
-      "Inteligentné ovládanie kúrenia a regulácie teplej vody. Systém sa prispôsobí tomu, či ste doma, a v noci nemusí bojler zbytočne zohrievať vodu na vysokú teplotu.",
+      "Inteligentné ovládanie kúrenia a regulácie teplej vody. Systém sa prispôsobí tomu, či ste doma, a v noci nemusí bojler zbytočne zohrievať vodu na vysokú teplotu. Zónová smart regulácia.",
     notes: [
       "zoslabenie bojlera v noci",
       "prispôsobenie kúrenia podľa vonkajšej teploty",
       "prispôsobenie kúrenia podľa prítomnosti osôb v dome",
       "prehľad spotreby energií a grafy",
+      "zónové ovládanie, dotykové termostaty",
       "ovládanie na diaľku",
       "bez nutnosti fyzického termostatu",
     ],
