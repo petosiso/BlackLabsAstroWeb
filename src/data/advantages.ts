@@ -27,14 +27,23 @@ export const advantagesData = [
     notes: [
       "🔒 Automatické uzamknutie dverí na noc pre vyššiu bezpečnosť",
       "🔥 Zónová regulácia kúrenia a rekuperácie",
+      "🛎️ Dom po zazvonení na zvonček pošle upozornenie s náhľadom z kamery",
       "💡 Svetlá v predsieni sa rozsvietia hneď po príchode domov",
       "🔊 Hlasový asistent vám v kuchyni oznámi, že práčka doprala",
+      "🚿 Bojler sa zapína iba vtedy, keď je lacnejší nočný prúd",
+      "🚪 Svetlo v špajzi sa zapne pri otvorení dverí a samo zhasne",
+      "🧹 Robotický vysávač sa spustí, keď odídete do práce",
+      "🎶 Pri sprche sa automaticky spustí hudba v kúpeľni",
+      "⏰ Časované spustenie recirkulácie teplej vody– ráno a večer, keď sa najčastejšie používa",
+      "🏡 Automatické zalievanie záhrady podľa počasia",
+      "⚡ Monitorovanie spotreby elektriny a upozornenie pri nadmernom odbere",
+      "📸 AI spracovanie obrazu z kamery rozpozná osobu pri dverách a rozsvieti vonkajšie svetlo",
       "🌬️ Po sprche sa automaticky spustí ventilátor alebo zosilní rekuperácia",
       "📱 Upozornenie na mobil, ak zostane otvorené okno, terasa alebo garážová brána",
       "🌐 SmartHome sám reštartuje router, keď vypadne internet",
       "🌬️ Zosilňnenie rekuperácie ak je zapnutý digestor v kuchyni",
       "🚗 Ovládanie garážovej brány priamo z obrazovky auta [Android Auto / Apple CarPlay]",
-      "♾️ Nekonečné možnosti automatizácií – prispôsobené vašim potrebám, kedykoľvek rozšíriteľné a upraviteľné",
+      "♾️ Nekonečné možnosti automatizácií – prispôsobené vašim potrebám, kedykoľvek rozšíriteľné a upraviteľné. Všetko spolu spolupracuje v jednom systéme.",
     ],
     icon: Home,
   },
@@ -53,11 +62,25 @@ export const advantagesData = [
     notes: [],
     icon: TabletSmartphone,
   },
+
+  {
+    title: "Výhodná cena",
+    prompt: "Bez zbytočných marží, viac možností",
+    description:
+      "Oproti uzavretým systémom ako TapHome alebo Loxone ponúkame bezkonkurenčnú cenu a ešte širšie možnosti. Dokonca cena oproti tomu ak by ste si kupovali drahšie samostatné zariadenia bez smart home nemusí byť vyššia. Neplatíte marže predraženým spoločnostiam. Systém je aktívne vyvíjaný komunitou nadšencov, má masívnu podporu a milióny používateľov. Podporuje zariadenia od rôznych výrobcov – nie ste viazaní na jedinú značku. Prečítatje si viac v sekcii \"Porovnanie a ceny\"",
+    technologies: [
+      "Open-source platforma",
+      "Podpora viacerých výrobcov",
+      "Komunitný vývoj",
+    ],
+    notes: [],
+    icon: BadgeDollarSign,
+  },
   {
     title: "Ovládanie na diaľku",
     prompt: "Všetko máte pod kontrolou, nech ste kdekoľvek. Vhodné na prenájmy a chaty.",
     description:
-      "Bezpečné pripojenie k domu aj na diaľku. Kedykoľvek môžete cez mobilný telefón alebo počítač skontrolovať stav a ovládať všetky zariadenia vo vašej domácnosti.",
+      "Bezpečné pripojenie k domu aj na diaľku. Kedykoľvek môžete cez mobilný telefón alebo počítač skontrolovať stav a ovládať všetky zariadenia vo vašej domácnosti. Vhodné aj pre chaty.",
     technologies: [
       "Mobilná aplikácia",
       "Bezpečné pripojenie",
@@ -100,7 +123,7 @@ export const advantagesData = [
     title: "Úspora financií",
     prompt: "Optimalizácia spotreby a nižšie náklady",
     description:
-      "Nemusíte dokupovať drahé samostatné zariadenia – termostat k tepelnému čerpadlu, ovládanie rekuperácie či videovrátnik. Vždy máte detailný prehľad o spotrebe elektriny, plynu a vody. Na základe dát môžete jednoducho kontrolovať svoju spotrebu energií.",
+      "Nemusíte dokupovať drahé samostatné zariadenia – termostat k tepelnému čerpadlu, ovládanie rekuperácie,  či videovrátnik. Vždy máte detailný prehľad o spotrebe elektriny, plynu a vody.",
     technologies: [
       "Monitoring spotreby energií",
       "Smart ovládanie kúrenia",
@@ -109,19 +132,7 @@ export const advantagesData = [
     notes: [],
     icon: PiggyBank,
   },
-  {
-    title: "Veľmi výhodná cena",
-    prompt: "Bez zbytočných marží, viac možností",
-    description:
-      "Oproti uzavretým systémom ako TapHome alebo Loxone ponúkame bezkonkurenčnú cenu a ešte širšie možnosti. Neplatíte marže predraženým spoločnostiam. Systém je aktívne vyvíjaný komunitou nadšencov, má masívnu podporu a milióny používateľov. Podporuje zariadenia od rôznych výrobcov – nie ste viazaní na jedinú značku.",
-    technologies: [
-      "Open-source platforma",
-      "Podpora viacerých výrobcov",
-      "Komunitný vývoj",
-    ],
-    notes: [],
-    icon: BadgeDollarSign,
-  },
+
   {
     title: "Ekologické riešenie",
     prompt: "Šetrite energiu aj planétu",

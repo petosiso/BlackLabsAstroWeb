@@ -31,7 +31,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
 
       <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
         Základom je centrálny server, ku ktorému sa dajú pripojiť napríklad iba
-        svetlá alebo garážová brána. Takýto štart vás vyjde povedzme na
+        svetlá, garážová brána a monitorovanie okien/dverí. Takýto štart vás
+        vyjde povedzme na
         <strong>150 – 350 €</strong>.
       </p>
 
@@ -41,103 +42,167 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
         spotreby elektriny alebo vody a mnoho ďalších funkcií. Cena sa tak
         prirodzene zvyšuje, no stále ostáva v rozumných hraniciach. Orientačne
         sa pohybujeme od
-        <strong>150 € do 2000 €</strong>. Samozrejme, ak ste napríklad tzv.
-        "audiofil" a budete chcieť prémiové HiFi v dome tak to bude o niečo viac
-        :)
+        <strong>150 €</strong>. Horná hranica silno závisí od toho aké máte
+        predstavy, vo všeobecnosti povedzme že cca do tých <strong
+          >500 - 2000 €</strong
+        ><strong>
+          <span class="text-justify mt-2 text-[color:var(--color-primary)]">
+            Treba ale myslieť na to, že v konečnom dôsledku vás to nevýjde o nič
+            drahšie ako keby ste smart home nemali vôbec. Prečo? Čítajte ďalej.</span
+          >
+        </strong>
+
+        <div class="mt-12">
+          <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
+            Porovnanie – domácnosť bez smart home
+          </h4>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Predstavte si jednoduchý príklad: ventilátor v kúpeľni riadený
+            vlhkosťou. Takýto bežný ventilátor stojí 70–150 €. Za podobnú cenu
+            ho však môžete mať integrovaný do smart home – s okamžitým prehľadom
+            o teplote, vlhkosti a činnosti ventilátora aj na diaľku. A tým to
+            nekončí: jeden senzor v kúpeľni môže zároveň riadiť ventilátor,
+            pomáhať pri zónovom vykurovaní či spúšťať ďalšie automatizácie.
+            Inými slovami, namiesto jedného „hlúpeho“ zariadenia získavate
+            inteligentný systém, ktorý pracuje pre vás a šetrí čas aj energiu.
+          </p>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Aj videovrátnik je krásny príklad toho, kde smart riešenie nemusí
+            stáť viac než klasika. Bežný videovrátnik s domácim displejom stojí
+            približne 150–300 €. Smart riešenie vás určite nevyjde drahšie, no
+            prináša omnoho viac možností. Namiesto jedného špeciálneho displeja
+            na stene môžete mať v dome tablet, ktorý slúži ako centrálny panel s
+            prehľadom o celom dome. Keď niekto zazvoní, na rovnakom tablete sa
+            okamžite zobrazí obraz z kamery a môžete začať hovoriť s
+            návštevníkom. Reproduktor vám zároveň prehrá zvukové upozornenie, na
+            mobil dostanete notifikáciu s náhľadom z kamery a dokonca aj s AI
+            popisom toho, kto stojí pri dverách. V praxi tak namiesto jedného
+            účelového zariadenia získavate plnohodnotný, inteligentný a
+            rozšíriteľný systém.
+          </p>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Ďalším príkladom je ovládanie kúrenia a rekuperácie. V klasickom
+            riešení by ste museli dokupovať nástenné ovládače či termostaty,
+            ktoré stoja často stovky eur. V smart home to všetko pohodlne
+            ovládate z rovnakého tabletu, kde máte prehľad o celom dome. Jedným
+            dotykom nastavíte teplotu v jednotlivých izbách, zapnete alebo
+            stlmíte rekuperáciu a vidíte aj históriu spotreby či trend teplôt. A
+            to všetko bez ďalších drahých ovládačov na stenách – úspornejšie,
+            elegantnejšie a s omnoho väčším komfortom.
+          </p>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Smart home prináša úsporu aj pri zabezpečení domu. V klasickom
+            riešení by ste potrebovali samostatný alarmový systém a k tomu ešte
+            zvlášť pohybové senzory pre ovládanie svetiel. V inteligentnom dome
+            vám stačí jediný pohybový senzor – ten slúži naraz pre alarm aj pre
+            automatické zapínanie svetiel podľa pohybu osôb. Nemusíte teda
+            investovať do drahých externých alarmov, všetko máte integrované v
+            jednom systéme. Ovládanie je jednoduché – buď pohodlne cez mobil,
+            alebo cez nástenný displej, kde vidíte stav alarmu aj svetiel v
+            reálnom čase. Menej zariadení, nižšie náklady a pritom vyššia
+            bezpečnosť aj komfort.
+          </p>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Takýchto príkladov je veľké množstvo. Ak máte technické zručnosti,
+            rád vám ukážem, ako systém funguje. Vďaka tomu si neskôr môžete
+            množstvo úprav a rozšírení spraviť sami a šetriť tak ďalšie náklady.
+          </p>
+        </div>
+
+        <div class="mt-12">
+          <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
+            Porovnanie – Loxone, TapHome
+          </h4>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Komerčné systémy ako <strong>Loxone</strong> či <strong
+              >TapHome</strong
+            > sú väčšinou uzatvorené. Zariadenia je možné dokupovať len od výrobcu
+            a to za vysoké ceny. Vyžadujú aj špeciálnu elektroinštaláciu.
+          </p>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Ich spoľahlivosť a robustnosť je dobrá, no možnosti integrácie sú
+            výrazne obmedzené – nikdy nedosiahnu takú flexibilitu ako otvorený
+            systém
+            <strong>Home Assistant</strong>.
+          </p>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Pre lepšiu predstavu: keď som si nechal vypracovať ponuky v roku
+            2022,
+            <strong>Loxone</strong> vychádzalo približne na <strong
+              >35 000 €</strong
+            > a
+            <strong>TapHome</strong> na <strong>20 000 €</strong>. A to ešte bez
+            integrácie audiosystémov, televízorov, práčky, smart vysávača a
+            ďalších zariadení.
+          </p>
+
+          <div class="mt-12"></div>
+          <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
+            Porovnanie – Fibaro, Homey
+          </h4>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            <strong>Fibaro</strong> aj <strong>Homey</strong> pôsobia ako univerzálne
+            smart centrály, no v skutočnosti sú uzavreté a drahé. Fibaro tlačí používateľov
+            do nákupu vlastných zariadení, ktoré sú výrazne predražené, a integrácia
+            s inými značkami je slabá.
+          </p>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            <strong>Homey</strong> sa prezentuje ako „všetko v jednom“, no veľa integrácií
+            funguje len vďaka komunite alebo plateným doplnkom. Ak výrobca ukončí
+            podporu, môžete prísť o funkčnosť zo dňa na deň. Navyše, pokročilé funkcie
+            sú dostupné iba v drahej verzii <strong>Homey Pro</strong>.
+          </p>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Oproti tomu <strong>Home Assistant</strong> je úplne otvorený – integruje
+            tisíce zariadení rôznych značiek, bez licenčných poplatkov a bez závislosti
+            na jednom výrobcovi. Získate flexibilitu, nižšie náklady a istotu, že
+            systém bude rásť spolu s vašimi potrebami.
+          </p>
+        </div>
+
+        <div class="mt-12">
+          <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
+            Porovnanie – Aqara, Xiaomi, Legrand
+          </h4>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Riešenia ako <strong>Aqara</strong>, <strong>Xiaomi</strong> či
+            <strong>Legrand</strong> lákajú nízkou cenou a jednoduchou inštaláciou.
+            Sú vhodné na základné úlohy ako spínanie svetiel či notifikácie zo senzorov,
+            no väčšinou sú viazané na vlastnú mobilnú aplikáciu alebo cloud.
+          </p>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            Ich možnosti sú výrazne obmedzené – nedokážu ovládať kúrenie v dome,
+            nemajú seriózne nástroje na monitoring spotreby energií, nevedia
+            integrovať bezpečnostný alarm ani komplexné multimediálne
+            zariadenia. Fungujú len v úzkom rozsahu a rýchlo narazíte na ich
+            limity.
+          </p>
+
+          <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
+            <strong>Home Assistant</strong> tieto produkty síce dokáže pripojiť,
+            ale hlavne ich dokáže prepojiť s ďalšími technológiami. Získate jednotný
+            systém, ktorý zvládne inteligentne riadiť kúrenie, sledovať energie,
+            integrovať alarm, kamery či spotrebiče – jednoducho ponúka komplexnosť,
+            ktorú spotrebiteľské riešenia nikdy nedosiahnu.
+          </p>
+        </div>
+
+        <GlowLineSeparator />
       </p>
-
-      <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-        Ak máte technické zručnosti, rád vám ukážem, ako systém funguje. Vďaka
-        tomu si neskôr môžete množstvo úprav a rozšírení spraviť sami a šetriť
-        tak ďalšie náklady.
-      </p>
-
-      <div class="mt-12">
-        <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
-          Porovnanie – Loxone, TapHome
-        </h4>
-
-        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-          Komerčné systémy ako <strong>Loxone</strong> či <strong
-            >TapHome</strong
-          > sú väčšinou uzatvorené. Zariadenia je možné dokupovať len od výrobcu
-          a to za vysoké ceny. Vyžadujú aj špeciálnu elektroinštaláciu.
-        </p>
-
-        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-          Ich spoľahlivosť a robustnosť je dobrá, no možnosti integrácie sú
-          výrazne obmedzené – nikdy nedosiahnu takú flexibilitu ako otvorený
-          systém
-          <strong>Home Assistant</strong>.
-        </p>
-
-        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-          Pre lepšiu predstavu: keď som si nechal vypracovať ponuky v roku 2022,
-          <strong>Loxone</strong> vychádzalo približne na <strong
-            >35 000 €</strong
-          > a
-          <strong>TapHome</strong> na <strong>20 000 €</strong>. A to ešte bez
-          integrácie audiosystémov, televízorov, práčky, smart vysávača a
-          ďalších zariadení.
-        </p>
-
-        <div class="mt-12"></div>
-        <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
-          Porovnanie – Fibaro, Homey
-        </h4>
-
-        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-          <strong>Fibaro</strong> aj <strong>Homey</strong> pôsobia ako univerzálne
-          smart centrály, no v skutočnosti sú uzavreté a drahé. Fibaro tlačí používateľov
-          do nákupu vlastných zariadení, ktoré sú výrazne predražené, a integrácia
-          s inými značkami je slabá.
-        </p>
-
-        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-          <strong>Homey</strong> sa prezentuje ako „všetko v jednom“, no veľa integrácií
-          funguje len vďaka komunite alebo plateným doplnkom. Ak výrobca ukončí podporu,
-          môžete prísť o funkčnosť zo dňa na deň. Navyše, pokročilé funkcie sú dostupné
-          iba v drahej verzii <strong>Homey Pro</strong>.
-        </p>
-
-        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-          Oproti tomu <strong>Home Assistant</strong> je úplne otvorený – integruje
-          tisíce zariadení rôznych značiek, bez licenčných poplatkov a bez závislosti
-          na jednom výrobcovi. Získate flexibilitu, nižšie náklady a istotu, že systém
-          bude rásť spolu s vašimi potrebami.
-        </p>
-      </div>
-
-      <div class="mt-12">
-        <h4 class="text-2xl md:text-3xl font-semibold text-foreground">
-          Porovnanie – Aqara, Xiaomi, Legrand
-        </h4>
-
-        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-          Riešenia ako <strong>Aqara</strong>, <strong>Xiaomi</strong> či
-          <strong>Legrand</strong> lákajú nízkou cenou a jednoduchou inštaláciou.
-          Sú vhodné na základné úlohy ako spínanie svetiel či notifikácie zo senzorov,
-          no väčšinou sú viazané na vlastnú mobilnú aplikáciu alebo cloud.
-        </p>
-
-        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-          Ich možnosti sú výrazne obmedzené – nedokážu ovládať kúrenie v dome,
-          nemajú seriózne nástroje na monitoring spotreby energií, nevedia
-          integrovať bezpečnostný alarm ani komplexné multimediálne zariadenia.
-          Fungujú len v úzkom rozsahu a rýchlo narazíte na ich limity.
-        </p>
-
-        <p class="text-justify mt-2 text-[color:var(--color-text-muted)]">
-          <strong>Home Assistant</strong> tieto produkty síce dokáže pripojiť, ale
-          hlavne ich dokáže prepojiť s ďalšími technológiami. Získate jednotný systém,
-          ktorý zvládne inteligentne riadiť kúrenie, sledovať energie, integrovať
-          alarm, kamery či spotrebiče – jednoducho ponúka komplexnosť, ktorú spotrebiteľské
-          riešenia nikdy nedosiahnu.
-        </p>
-      </div>
-
-      <GlowLineSeparator />
+      <Footer />
     </main>
-    <Footer />
   </body>
 </html>
