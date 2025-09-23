@@ -4,7 +4,7 @@
 const ICON_COLOR = "#41BDF5"; // tvoja farba
 const ICON_STROKE = 3; // „bold“ efekt
 
-interface Props { itemsCount: number, centered?: boolean, allOpen: boolean }
+interface Props { itemsCount: number, centered?: boolean, allOpen: boolean, firstOpen: boolean }
  
  
 const props = Astro.props as Props;
@@ -34,7 +34,7 @@ const props = Astro.props as Props;
               isLeft ? 'pr-6 md:pr-12' : 'pl-6 md:pl-12',
             ]}>
               <div class="card-surface p-6">
-               <details class="group"  {...(index === 0 || props.allOpen === true ? { open: true } : {})}>
+               <details class="group"  {...(((index === 0 && props.firstOpen === true) || props.allOpen === true) ? { open: true } : {})}>
           <summary   class={`flex flex-col items-center text-center p-6 relative `}>
 
                   <div class={`w-full justify-end flex pb-2 text-[var(--accent)] [&>svg]:w-6 [&>svg]:h-6  ${props.centered ? "justify-center" : "justify-end"}`}>
@@ -104,7 +104,7 @@ return(
             <div class={`w-full flex pb-2 text-[var(--accent)] [&>svg]:w-6 [&>svg]:h-6  ${props.centered ? "justify-center" : "justify-end"}`}>
                  <Icon style={`stroke:${ICON_COLOR}; stroke-width:${ICON_STROKE}`}  />
               </div>
-          <details class="group"  {...(index === 0  || props.allOpen === true ? { open: true } : {})}>
+          <details class="group"  {...(((index === 0 && props.firstOpen === true) || props.allOpen === true) ? { open: true } : {})}>
           <summary   class={`flex flex-col items-center justify-center text-center p-6 relative `}>
             <div class="mb-2 space-y-1 items-center justify-center" >
                   

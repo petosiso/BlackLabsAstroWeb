@@ -27,6 +27,7 @@ export const advantagesData = [
     notes: [
       "🔒 Automatické uzamknutie dverí na noc pre vyššiu bezpečnosť",
       "🔥 Zónová regulácia kúrenia a rekuperácie",
+      "📱 Upozornenie na mobil, ak zostane otvorené okno, terasa alebo garážová brána",
       "🛎️ Dom po zazvonení na zvonček pošle upozornenie s náhľadom z kamery",
       "💡 Svetlá v predsieni sa rozsvietia hneď po príchode domov",
       "🔊 Hlasový asistent vám v kuchyni oznámi, že práčka doprala",
@@ -39,8 +40,7 @@ export const advantagesData = [
       "⚡ Monitorovanie spotreby elektriny a upozornenie pri nadmernom odbere",
       "📸 AI spracovanie obrazu z kamery rozpozná osobu pri dverách a rozsvieti vonkajšie svetlo",
       "🌬️ Po sprche sa automaticky spustí ventilátor alebo zosilní rekuperácia",
-      "📱 Upozornenie na mobil, ak zostane otvorené okno, terasa alebo garážová brána",
-      "🌐 SmartHome sám reštartuje router, keď vypadne internet",
+     // "🌐 SmartHome sám reštartuje router, keď vypadne internet",
       "🌬️ Zosilňnenie rekuperácie ak je zapnutý digestor v kuchyni",
       "🚗 Ovládanie garážovej brány priamo z obrazovky auta [Android Auto / Apple CarPlay]",
       "♾️ Nekonečné možnosti automatizácií – prispôsobené vašim potrebám, kedykoľvek rozšíriteľné a upraviteľné. Všetko spolu spolupracuje v jednom systéme.",
@@ -62,7 +62,6 @@ export const advantagesData = [
     notes: [],
     icon: TabletSmartphone,
   },
-
   {
     title: "Výhodná cena",
     prompt: "Bez zbytočných marží, viac možností",
